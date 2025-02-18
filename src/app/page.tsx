@@ -1,6 +1,5 @@
 import Header from "@/components/section/header";
 import Image from "next/image";
-import Header from "../components/section";
 import backgroundImage from "@/assets/images/moon-bg-dark.png";
 import Container from "@/components/section/container";
 

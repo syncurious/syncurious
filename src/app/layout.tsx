@@ -12,6 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const poppins = Geist({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+});
+
 export const metadata = {
   title: "Syncurious",
   description: "We provide cutting-edge software solutions.",
@@ -52,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>

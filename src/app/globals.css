@@ -8,17 +8,29 @@
 }
 
 :root {
-  --primary: #01ff00;
+  --primary: #00ff00;
+  --secondary: #002200;
+  --ter: #009f00;
+  --color: #e9ffe9;
+  --nutral: #ffffff;
   --background: #0a0a0a;
   --foreground: #171717;
+
+  /* font colors */
+  --font-primary: #e9ffe9;
+  --font-secondary: #00ff00;
+  --font-ter: #009f00;
+  --font-color: #e9ffe9;
 }
-  
+
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+}
 
 body {
   color: var(--foreground);
