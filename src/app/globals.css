@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "YourFont";
+  src: url("/fonts/ibrand.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +21,11 @@
   --ter: #009f00;
   --color: #e9ffe9;
   --nutral: #ffffff;
-  --background: #0a0a0a;
+  --background: #000000;
   --foreground: #171717;
+  /* font */
+  
+  --font-primary: "ibrand", sans-serif;
 
   /* font colors */
   --font-primary: #e9ffe9;
@@ -23,11 +34,9 @@
   --font-color: #e9ffe9;
 }
 
-
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }

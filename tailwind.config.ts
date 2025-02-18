@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: "var(--font-primary)",
+      },
       colors: {
         primary: "var(--primary)",
         background: "var(--background)",
