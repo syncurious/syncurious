@@ -10,7 +10,7 @@ interface ContainerProps {
 
 // temp
 
-const Container: React.FC<any> = (props) => {
+const Container: React.FC<ContainerProps> = (props) => {
   const { children, className, style, innerStyle, innerClassName } = props;
   return (
     <div
