@@ -8,7 +8,7 @@ export default function Home() {
     <div className="">
       <Container>
         <Header />
-        <Image src={backgroundImage} alt="background image" />
+        <Image src={backgroundImage} alt="background image" priority />
       </Container>
     </div>
   );
