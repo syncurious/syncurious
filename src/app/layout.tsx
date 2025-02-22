@@ -14,34 +14,32 @@ const primaryFont = local({
 });
 
 export const metadata = {
-  title: "Syncurious",
-  description: "We provide cutting-edge software solutions.",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+  title: {
+    default: "Syncurious - Innovative Solutions",
+    template: "%s | Syncurious",
   },
-  manifest: "/site.webmanifest",
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareCompany",
-      name: "Your Software Company Name",
-      url: "https://yourwebsite.com",
-      logo: "https://yourwebsite.com/logo.png",
-      description: "We develop high-quality software solutions for businesses.",
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+1-234-567-890",
-        contactType: "customer service",
-        areaServed: "Worldwide",
-        availableLanguage: "English",
+  description:
+    "We are Syncurious, a software company specializing in creating websites, mobile applications, and software solutions. Our team is dedicated to delivering innovative and impactful digital products to help you achieve your goals.",
+  openGraph: {
+    title: "Syncurious",
+    description: "Innovative software solutions for your business.",
+    url: "https://syncurious.com",
+    siteName: "Syncurious",
+    images: [
+      {
+        url: "https://syncurious.com/og-image.jpg",
+        width: 1200,
+        height: 630,
       },
-      sameAs: [
-        "https://www.facebook.com/yourcompany",
-        "https://www.linkedin.com/company/yourcompany",
-        "https://twitter.com/yourcompany",
-      ],
-    }),
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Software Co",
+    description: "Innovative software solutions.",
+    images: ["https://syncurious.com/og-image.jpg"],
   },
 };
 
@@ -50,8 +48,51 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Syncurious",
+    url: "https://syncurious.com",
+    logo: "https://syncurious.com/icon-512.png",
+    description:
+      "Leading software development company. which is Providing the best software solutions for your business.",
+  };
   return (
     <html lang="en">
+      <head>
+        {/* Favicons */}
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/icon-192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/icon-512.png"
+        />
+
+        {/* Web Manifest for PWA */}
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* Preconnect and DNS Prefetch */}
+        <link rel="dns-prefetch" href="https://syncurious.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body
         className={`${poppins.variable} ${primaryFont.variable} antialiased`}
       >
