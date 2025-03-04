@@ -42,17 +42,15 @@ function AnimatedLights() {
   );
 }
 
-export default function ShpareBackgound() {
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+  className?: string;
+  style?: React.CSSProperties;
+}
+export default function SphereBackgound({className , style }:Props) {
   return (
     <div
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100vh",
-        zIndex: -1,
-      }}
+    className={`absolute top-0 left-0 w-full h-full ${className}`}
+      style={style}
     >
       <Canvas>
         <color attach="background" args={["#000"]} />
