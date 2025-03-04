@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <div className="">
       <Container>
-        <Header />
         <HeroSection />
         {/* <Image src={backgroundImage} alt="background image" priority /> */}
       </Container>

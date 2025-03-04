@@ -24,7 +24,7 @@
   --background: #000000;
   --foreground: #171717;
   /* font */
-  
+
   --font-primary: "ibrand", sans-serif;
 
   /* font colors */
@@ -41,7 +41,12 @@
 
   /* radial gradients */
   --radial-gradient-primary: radial-gradient(circle, #00ff00 0%, #009f00 100%);
-  --radial-gradient-white: radial-gradient(circle, #ffffff 0%, #fff 70%, var(--background) 100%);
+  --radial-gradient-white: radial-gradient(
+    circle,
+    #ffffff 0%,
+    #fff 70%,
+    var(--background) 100%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,12 +62,32 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* gradients */
 
-.gradient-text{
+.gradient-text {
   @apply text-transparent bg-clip-text;
   background: var(--radial-gradient-white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Others */
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-y-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.absolute-x-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
