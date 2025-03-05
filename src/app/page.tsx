@@ -6,11 +6,14 @@ import HeroSection from "@/components/section/hero";
 
 export default function Home() {
   return (
-    <div className="">
+    <main className="">
       <Container>
-        <HeroSection />
-        {/* <Image src={backgroundImage} alt="background image" priority /> */}
+        <section>
+          <HeroSection />
+        </section>
+        <section className="h-screen max-h-[600px] bg-blur">
+        </section>
       </Container>
-    </div>
+    </main>
   );
 }

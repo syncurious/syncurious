@@ -5,7 +5,7 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <div className="h-screen max-h-[750px] py-[8%] flex justify-center items-center">
+    <div className="h-screen relative  max-h-[750px] py-[8%] flex justify-center items-center">
       <SphereBackgound className="z-0" />
       <div className="max-w-[50%] z-10 flex flex-col justify-between  h-full w-full border-primary">
         <div>
