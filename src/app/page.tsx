@@ -14,9 +14,9 @@ export default function Home() {
           <HeroSection />
         </Section>
       </Container>
-      {/* <SecondaryContainer>
+      <SecondaryContainer>
         <div className="z-10">Hello world</div>
-      </SecondaryContainer> */}
+      </SecondaryContainer>
     </main>
   );
 }
