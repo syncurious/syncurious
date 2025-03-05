@@ -10,6 +10,7 @@ interface Props {
   style?: React.CSSProperties;
   innerStyle?: React.CSSProperties;
   overlayStyle?: React.CSSProperties;
+  extraComponent?: React.ReactNode;
 }
 
 export default function SecondaryContainer(props: Props) {
@@ -21,18 +22,24 @@ export default function SecondaryContainer(props: Props) {
     innerClassName,
     overlayClassName,
     overlayStyle,
+    extraComponent,
   } = props;
 
   return (
     <Container
-      className="relative h-screen max-h-[650px]"
-      innerClassName=" !static "
+      style={style}
+      className={`relative h-screen max-h-[650px] ${className}`}
+      innerClassName=" !static h-full "
     >
+      {extraComponent}
       <div
         style={overlayStyle}
         className={`absolute w-full h-full top-0 z-[1] left-0 bg-blur ${overlayClassName}`}
       />
-      <div style={innerStyle} className={`relative z-[2] ${innerClassName}`}>
+      <div
+        style={innerStyle}
+        className={`relative z-[2] w-full h-full ${innerClassName}`}
+      >
         {children}
       </div>
     </Container>

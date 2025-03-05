@@ -5,17 +5,29 @@ import Container from "@/components/section/container";
 import HeroSection from "@/components/section/hero";
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
+import Heading from "@/components/base/heading";
+import Paragraph from "@/components/base/Paragraph";
+import ClientTrustSection from "@/components/section/Home/Client-trust";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Container>
         <Section>
           <HeroSection />
         </Section>
       </Container>
-      <SecondaryContainer>
-        <div className="z-10">Hello world</div>
+      <SecondaryContainer
+        extraComponent={
+          <div className="absolute h-full w-full">
+            <div className="absolute z-[1] -top-[10%] -right-[10%] gradient-primary-to-transparent h-[30rem] w-[30rem] blur-3xl" />
+            <div className="absolute z-[1] -bottom-[10%] -left-[10%] gradient-primary-to-transparent h-[25rem] w-[25rem] blur-3xl" />
+          </div>
+        }
+      >
+        <Section>
+          <ClientTrustSection />
+        </Section>
       </SecondaryContainer>
     </main>
   );
