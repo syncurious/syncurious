@@ -1,14 +1,10 @@
-import Header from "@/components/section/header";
-import Image from "next/image";
-import backgroundImage from "@/assets/images/moon-bg-dark.png";
 import Container from "@/components/section/container";
 import HeroSection from "@/components/section/hero";
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
-import Heading from "@/components/base/heading";
-import Paragraph from "@/components/base/Paragraph";
 import ClientTrustSection from "@/components/section/Home/Client-trust";
-import WhyChooseUsSection from "@/components/section/Home/WhyChooseUsSection";
+import WhyChooseUsSection from "@/components/section/Home/WhyChooseUs";
+import PortfolioSection from "@/components/section/Home/Portfolio";
 
 export default function Home() {
   return (
@@ -31,6 +27,9 @@ export default function Home() {
         </Section>
         <Section>
           <WhyChooseUsSection />
+        </Section>
+        <Section>
+          <PortfolioSection />
         </Section>
       </SecondaryContainer>
     </main>
