@@ -1,3 +1,4 @@
+import Divider from "@/components/base/Divider";
 import Heading from "@/components/base/heading";
 import Paragraph from "@/components/base/Paragraph";
 import React from "react";
@@ -5,7 +6,7 @@ import React from "react";
 export default function ClientTrustSection() {
   return (
     <div className="flex flex-col justify-between gap-10  w-full h-full py-[5%]">
-      <div className="flex flex-col justify-between gap-10">
+      <div className="flex flex-col justify-between gap-5">
         <div className="btn w-full flex justify-center">
           <button className="rounded-full py-1 px-4 border border-white hover:border-primary hover:text-primary text-white">
             About Us
@@ -33,6 +34,9 @@ export default function ClientTrustSection() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="px-10">
+        <Divider thickness="2px" className="rounded-full" />
       </div>
     </div>
   );

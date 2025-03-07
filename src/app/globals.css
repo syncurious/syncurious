@@ -58,7 +58,7 @@
 
 body {
   color: var(--foreground);
-  /* background: var(--background); */
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -86,19 +86,8 @@ body {
   backdrop-filter: blur(3.7px);
   -webkit-backdrop-filter: blur(3.7px);
 }
-
-/* .card-blur {
-  backdrop-filter: blur(25px) saturate(50%);
-  -webkit-backdrop-filter: blur(25px) saturate(50%);
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  z-index: 10;
-  border: 1px solid rgba(255, 255, 255, 0.125); 
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
- } */
 .card-blur {
-  background: var(--background);
+  background: #001400e0;
   border-radius: 12px;
   z-index: 0;
   position: relative;

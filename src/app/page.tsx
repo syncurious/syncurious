@@ -19,7 +19,7 @@ export default function Home() {
       </Container>
       <SecondaryContainer
         extraComponent={
-          <div className="absolute h-full w-full">
+          <div className="absolute h-full w-full left-0">
             <div className="absolute z-[1] -top-[10%] -right-[10%] gradient-primary-to-transparent h-[30rem] w-[30rem] blur-3xl" />
             <div className="absolute z-[1] -bottom-[10%] -left-[10%] gradient-primary-to-transparent h-[25rem] w-[25rem] blur-3xl" />
           </div>
