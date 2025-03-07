@@ -8,6 +8,7 @@ import Section from "@/components/section";
 import Heading from "@/components/base/heading";
 import Paragraph from "@/components/base/Paragraph";
 import ClientTrustSection from "@/components/section/Home/Client-trust";
+import WhyChooseUsSection from "@/components/section/Home/WhyChooseUsSection";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
           <ClientTrustSection />
         </Section>
         <Section>
-          <ClientTrustSection />
+          <WhyChooseUsSection />
         </Section>
       </SecondaryContainer>
     </main>

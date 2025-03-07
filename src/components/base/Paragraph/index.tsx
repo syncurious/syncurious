@@ -21,7 +21,7 @@ const Paragraph: React.FC<ParagraphProps> = ({ children, className, style, level
     return (
         <p
             className={twMerge(
-                `${levelClasses[level - 1]} font-medium leading-relaxed text-gray-800`,
+                `${levelClasses[level - 1]} font-medium leading-relaxed text-white`,
                 className
             )}
             style={style}

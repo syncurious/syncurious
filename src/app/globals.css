@@ -86,28 +86,7 @@ body {
   backdrop-filter: blur(3.7px);
   -webkit-backdrop-filter: blur(3.7px);
 }
-.card-blur {
-  background: #001400e0;
-  border-radius: 12px;
-  z-index: 0;
-  position: relative;
-  /* border: 1px solid rgba(255, 255, 255, 0.125); */
-}
-.card-blur::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.card-border{
-  position: absolute;
-  height: calc(100% + 3px);
-  width: calc(100% + 3px);
-  top: -1;
-  right: -1;
-  z-index: -1;
-  border-radius:12px;
-  background: linear-gradient(300deg, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%);}
+
 /* Others */
 
 .absolute-center {
@@ -128,7 +107,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 /* Apply to the body or a specific container */
 html {
@@ -151,4 +129,32 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.gradient-border-card {
+  position: relative;
+  backdrop-filter: blur(10px); /* Optional: Glass effect */
+  background: #ffffff03; /* Fully transparent background */
+  color: white; /* Adjust text color */
+}
+
+/* Outer gradient border */
+.gradient-border-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px; /* Moves border outside */
+  border-radius: inherit;
+  padding: 1px; /* Border thickness */
+  background: linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* Clip the background inside the card to remain transparent */
+  -webkit-mask: linear-gradient(white 0 0) content-box,
+    linear-gradient(white 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none; /* Ensures clicks go through */
 }
