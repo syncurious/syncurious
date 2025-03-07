@@ -128,3 +128,27 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+/* Apply to the body or a specific container */
+html {
+  overflow: overlay;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Make track fully transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

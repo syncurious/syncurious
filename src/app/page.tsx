@@ -28,6 +28,9 @@ export default function Home() {
         <Section>
           <ClientTrustSection />
         </Section>
+        <Section>
+          <ClientTrustSection />
+        </Section>
       </SecondaryContainer>
     </main>
   );
