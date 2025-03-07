@@ -1,6 +1,4 @@
-import Divider from "@/components/base/Divider";
 import Heading from "@/components/base/heading";
-import Paragraph from "@/components/base/Paragraph";
 import React from "react";
 import SectionHeader from "../../SectionHeader";
 
