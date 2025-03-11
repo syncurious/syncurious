@@ -5,10 +5,6 @@ import SectionHeader from "../../SectionHeader";
 import Heading from "@/components/base/heading";
 
 export default function PortfolioSection() {
-  // const unselected =
-  //   "gradient-border-card before:[background:linear-gradient(145deg,_rgba(255,255,255,1)_25%,_rgba(0,255,0,0.3)_60%,_rgba(255,255,255,1)_100%)]";
-
-  // const [selected, setSelected] = React.useState(0);
 
   return (
     <SectionHeader
@@ -18,7 +14,7 @@ export default function PortfolioSection() {
     >
       <div className="px-10">
         <div className="grid grid-cols-2 px-10 gap-5">
-          <div className="relative gradient-border-card w-full h-full max-h-[350px] rounded-2xl">
+          <div className="relative gradient-border-card w-full h-[250px] max-h-[350px] rounded-2xl">
             <img
               alt="project image"
               height={350}
@@ -55,7 +51,7 @@ export default function PortfolioSection() {
               </div>
             </div>
           </div>
-          <div className="relative gradient-border-card w-full h-full max-h-[350px] rounded-2xl">
+          <div className="relative gradient-border-card w-full h-[250px] max-h-[350px] rounded-2xl">
             <img
               alt="project image"
               height={350}
