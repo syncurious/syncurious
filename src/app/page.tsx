@@ -1,5 +1,3 @@
-import Container from "@/components/section/container";
-import HeroSection from "@/components/section/hero";
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
 import ClientTrustSection from "@/components/section/Home/Client-trust";
