@@ -14,7 +14,7 @@ export default function PortfolioSection() {
     >
       <div className="px-20">
         <div className="grid grid-cols-3 gap-5">
-          <div className="gradient-border-card flex flex-col border rounded-2xl p-6 gap-2">
+          <div className="gradient-border-card flex flex-col rounded-2xl p-6 gap-2 !bg-[#ffffff0b]">
             <div className="flex gap-2 items-center">
               <div className="h-[30px] w-[30px]">
                 <img
@@ -31,7 +31,7 @@ export default function PortfolioSection() {
               truly reflect your brand's personality.
             </Paragraph>
           </div>
-          <div className="gradient-border-card flex flex-col border rounded-2xl p-6 gap-2">
+          <div className="gradient-border-card flex flex-col rounded-2xl p-6 gap-2 !bg-[#ffffff0b]">
             <div className="flex gap-2 items-center">
               <div className="h-[30px] w-[30px]">
                 <img
@@ -48,7 +48,7 @@ export default function PortfolioSection() {
               reflects your expertise.
             </Paragraph>
           </div>
-          <div className="gradient-border-card flex flex-col border rounded-2xl p-6 gap-2">
+          <div className="gradient-border-card flex flex-col rounded-2xl p-6 gap-2 !bg-[#ffffff0b]">
             <div className="flex gap-2 items-center">
               <div className="h-[30px] w-[30px]">
                 <img

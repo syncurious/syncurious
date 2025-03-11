@@ -145,12 +145,7 @@ html {
   inset: -1px; /* Moves border outside */
   border-radius: inherit;
   padding: 1px; /* Border thickness */
-  background: linear-gradient(
-    145deg,
-    rgba(0, 0, 0, 0) 35%,
-    rgba(255, 255, 255, 1) 100%
-    #00ff001a
-  );
+  background: linear-gradient( 145deg, rgba(0, 0, 0, 0) 35%,rgba(255, 255, 255, 1) 100% );
 
   /* Clip the background inside the card to remain transparent */
   -webkit-mask: linear-gradient(white 0 0) content-box,
