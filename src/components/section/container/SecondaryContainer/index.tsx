@@ -1,7 +1,4 @@
 import React from "react";
-import Container from "../index";
-import Heading from "@/components/base/heading";
-import Section from "../..";
 
 interface Props {
   children: React.ReactNode;

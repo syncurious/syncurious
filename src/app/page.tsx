@@ -5,6 +5,7 @@ import Section from "@/components/section";
 import ClientTrustSection from "@/components/section/Home/Client-trust";
 import WhyChooseUsSection from "@/components/section/Home/WhyChooseUs";
 import PortfolioSection from "@/components/section/Home/Portfolio";
+import OurServicesSection from "@/components/section/Home/OurServices";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
         </Section>
         <Section>
           <PortfolioSection />
+        </Section>
+        <Section>
+          <OurServicesSection />
         </Section>
       </SecondaryContainer>
     </main>

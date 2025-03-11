@@ -1,6 +1,5 @@
 import Heading from "@/components/base/heading";
 import SphereBackgound from "@/lib/three/sphereBackgound";
-import Container  from "@/components/section/container";
 import React from "react";
 
 function HeroSection() {

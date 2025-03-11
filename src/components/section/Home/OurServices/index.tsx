@@ -5,10 +5,10 @@ import SectionHeader from "../../SectionHeader";
 import Heading from "@/components/base/heading";
 
 export default function PortfolioSection() {
-  // const unselected =
-  //   "gradient-border-card before:[background:linear-gradient(145deg,_rgba(255,255,255,1)_25%,_rgba(0,255,0,0.3)_60%,_rgba(255,255,255,1)_100%)]";
+//   const unselected =
+//     "gradient-border-card before:[background:linear-gradient(145deg,_rgba(255,255,255,1)_25%,_rgba(0,255,0,0.3)_60%,_rgba(255,255,255,1)_100%)]";
 
-  // const [selected, setSelected] = React.useState(0);
+//   const [selected, setSelected] = React.useState(0);
 
   return (
     <SectionHeader
