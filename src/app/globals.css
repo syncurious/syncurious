@@ -149,6 +149,7 @@ html {
     145deg,
     rgba(0, 0, 0, 0) 35%,
     rgba(255, 255, 255, 1) 100%
+    #00ff001a
   );
 
   /* Clip the background inside the card to remain transparent */
