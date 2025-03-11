@@ -16,11 +16,12 @@ export default function PortfolioSection() {
         <div className="grid grid-cols-3 gap-5">
           <div className="gradient-border-card flex flex-col border rounded-2xl p-6 gap-2">
             <div className="flex gap-2 items-center">
-              <img
-                src="https://img.icons8.com/?size=30&id=jK0ocuDVKA3W&format=png&color=ffffff"
-                alt="project image"
-                className="rounded-2xl "
-              />
+              <div className="h-[30px] w-[30px]">
+                <img
+                  src="https://img.icons8.com/?size=100&id=77155&format=png&color=FFFFFF"
+                  alt="project image"
+                />
+              </div>
               <Heading level={3}>Brand Identity & Design</Heading>
             </div>
             <Paragraph level={5}>
@@ -32,11 +33,12 @@ export default function PortfolioSection() {
           </div>
           <div className="gradient-border-card flex flex-col border rounded-2xl p-6 gap-2">
             <div className="flex gap-2 items-center">
-              <img
-                src="https://img.icons8.com/?size=30&id=jK0ocuDVKA3W&format=png&color=ffffff"
-                alt="project image"
-                className="rounded-2xl "
-              />
+              <div className="h-[30px] w-[30px]">
+                <img
+                  src="https://img.icons8.com/?size=100&id=61SQFVq3xULD&format=png&color=FFFFFF"
+                  alt="project image"
+                />
+              </div>
               <Heading level={3}>Brand Identity & Design</Heading>
             </div>
             <Paragraph level={5}>
@@ -48,11 +50,12 @@ export default function PortfolioSection() {
           </div>
           <div className="gradient-border-card flex flex-col border rounded-2xl p-6 gap-2">
             <div className="flex gap-2 items-center">
-              <img
-                src="https://img.icons8.com/?size=30&id=jK0ocuDVKA3W&format=png&color=ffffff"
-                alt="project image"
-                className="rounded-2xl "
-              />
+              <div className="h-[30px] w-[30px]">
+                <img
+                  src="https://img.icons8.com/?size=100&id=jK0ocuDVKA3W&format=png&color=ffffff"
+                  alt="project image"
+                />
+              </div>
               <Heading level={3}>Brand Identity & Design</Heading>
             </div>
             <Paragraph level={5}>
