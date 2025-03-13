@@ -2,7 +2,6 @@
 import Paragraph from "@/components/base/Paragraph";
 import React from "react";
 import SectionHeader from "../../SectionHeader";
-import Heading from "@/components/base/heading";
 import Avatar from "@/components/ui/Avatar";
 import Divider from "@/components/base/Divider";
 
