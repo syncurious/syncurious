@@ -21,10 +21,10 @@
   --ter: #009f00;
   --color: #e9ffe9;
   --nutral: #ffffff;
-  --background: #000000;
+  --background: #000800;
   --foreground: #171717;
   /* font */
-  
+
   --font-primary: "ibrand", sans-serif;
 
   /* font colors */
@@ -32,6 +32,21 @@
   --font-secondary: #00ff00;
   --font-ter: #009f00;
   --font-color: #e9ffe9;
+
+  /* gradients */
+  --gradient-primary: linear-gradient(90deg, #00ff00 0%, #009f00 100%);
+  --gradient-secondary: linear-gradient(90deg, #009f00 0%, #00ff00 100%);
+  --gradient-ter: linear-gradient(90deg, #00ff00 0%, #009f00 100%);
+  --gradient-color: linear-gradient(90deg, #00ff00 0%, #009f00 100%);
+
+  /* radial gradients */
+  --radial-gradient-primary: radial-gradient(circle, #00ff00 0%, #009f00 100%);
+  --radial-gradient-white: radial-gradient(
+    circle,
+    #ffffff 0%,
+    #fff 70%,
+    var(--background) 100%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +58,115 @@
 
 body {
   color: var(--foreground);
-  /* background: var(--background); */
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* gradients */
+
+.gradient-text {
+  @apply text-transparent bg-clip-text;
+  background: var(--radial-gradient-white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-gradient {
+  background: rgb(0, 159, 0);
+  background: linear-gradient(
+    342deg,
+    rgba(0, 159, 0, 1) 0%,
+    rgba(2, 139, 2, 1) 45%,
+    rgba(3, 130, 3, 1) 71%,
+    rgba(4, 111, 4, 1) 83%,
+    rgba(7, 68, 7, 1) 100%
+  );
+}
+
+.gradient-primary-to-transparent {
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 0, 0.12) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+/* backgorunds */
+
+.bg-blur {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+}
+
+/* Others */
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-y-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.absolute-x-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Apply to the body or a specific container */
+html {
+  overflow: overlay;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Make track fully transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.gradient-border-card {
+  position: relative;
+  backdrop-filter: blur(10px); /* Optional: Glass effect */
+  background: #ffffff03; /* Fully transparent background */
+  color: white; /* Adjust text color */
+}
+
+/* Outer gradient border */
+.gradient-border-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px; /* Moves border outside */
+  border-radius: inherit;
+  padding: 1px; /* Border thickness */
+  background: linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  /* Clip the background inside the card to remain transparent */
+  -webkit-mask: linear-gradient(white 0 0) content-box,
+    linear-gradient(white 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none; /* Ensures clicks go through */
 }

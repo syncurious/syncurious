@@ -12,8 +12,8 @@ function Header(props: Props) {
   const { style, className } = props;
   return (
     <header style={style} className={`${className}`}>
-      <Container>
-        <nav className="h-[60px] flex absolute z-10 items-center my-2 flex-row justify-between w-[calc(100%-.75rem)]">
+      <Container className="relative">
+        <nav className="h-[60px] flex absolute-x-center z-10 items-center my-2 flex-row justify-between w-[calc(90%)] fixed">
           <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full bg-gradient-to-r from-white/5 to-background/5 p-5 rounded-lg" />
           <div id="logo">
             <Image src={Logo} alt="Syncurious Logo" width={0} height={50} />

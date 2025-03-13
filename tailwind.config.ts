@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'radial-gradient-white': 'var(--radial-gradient-white)',
+      },
       fontFamily: {
         primary: "var(--font-primary)",
       },
