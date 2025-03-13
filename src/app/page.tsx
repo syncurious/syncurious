@@ -8,15 +8,16 @@ import TestimonialsSection from "@/components/section/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
 import CTASection from "@/components/section/Home/CTASection";
+import HeroSection from "@/components/section/hero";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      {/* <Container>
+      <Container>
         <Section>
           <HeroSection />
         </Section>
-      </Container> */}
+      </Container>
       <SecondaryContainer
         extraComponent={
           <div className="absolute h-full w-full left-0">
