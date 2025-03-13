@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeader from "../../SectionHeader";
 import Heading from "@/components/base/heading";
 
-export default function PortfolioSection() {
+export default function ServicesSection() {
   return (
     <SectionHeader
       underline={false}

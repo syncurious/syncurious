@@ -42,9 +42,11 @@ export default function SectionHeader({
               {heading}
             </Heading>
           )}
-          <Paragraph level={4} className="text-white w-[50%]  block">
-            {paragraph}
-          </Paragraph>
+          {paragraph && (
+            <Paragraph level={4} className="text-white w-[50%]  block">
+              {paragraph}
+            </Paragraph>
+          )}
         </div>
       </div>
       {children}
