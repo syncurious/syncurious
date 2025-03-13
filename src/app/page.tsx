@@ -7,6 +7,7 @@ import OurServicesSection from "@/components/section/Home/OurServices";
 import TestimonialsSection from "@/components/section/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
+import CTASection from "@/components/section/Home/CTASection";
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ export default function Home() {
         </Section>
         <Section>
           <TestimonialsSection />
+        </Section>
+        <Section>
+          <CTASection />
         </Section>
       </SecondaryContainer>
       <Container className="footer-gradient">
