@@ -28,7 +28,7 @@ export default function Button({
   const defaultStyles = {
     contained: {
       borderColor: "border-primary",
-      textColor: "text-white",
+      textColor: "text-black",
       bgColor: "bg-primary",
     },
     outlined: {
