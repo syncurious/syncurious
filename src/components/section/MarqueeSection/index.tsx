@@ -27,7 +27,6 @@ export default function MarqueeSection() {
           start: "top bottom", // Start when the bottom of the element hits the bottom of the viewport
           end: "bottom top",         // End when the top of the element hits the top of the viewport
           scrub: 1,
-          markers: true,
         },
       });
     }
