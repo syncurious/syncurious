@@ -32,7 +32,7 @@ export default function MarqueeSection() {
       <div ref={marqueeRef} className="w-full h-full">
         <Heading
           level={1}
-          className="!text-[44vw] flex border flex-nowrap flex-row justify-center items-center h-full w-full !pb-[10%]"
+          className="!text-[44vw] flex justify-center items-center h-full w-full !pb-[10%]"
         >
           syncurıous  
         </Heading>

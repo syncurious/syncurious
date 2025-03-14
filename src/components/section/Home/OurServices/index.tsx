@@ -12,8 +12,8 @@ export default function ServicesSection() {
       heading="Our Services Speak for Themselves"
       paragraph="We blend innovation with experience to deliver outstanding digital solutions. Our expert team is dedicated to understanding your unique needs."
     >
-      <div className="px-20">
-        <div className="grid grid-cols-3 gap-5">
+      <div className="md:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div className="gradient-border-card flex flex-col rounded-2xl p-6 gap-2 !bg-[#ffffff0b]">
             <div className="flex gap-2 items-center">
               <div className="h-[30px] w-[30px]">
