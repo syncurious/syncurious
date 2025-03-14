@@ -19,6 +19,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'mobile': '480px',   // Larger mobile screens
+        'tablet': '768px',   // Tablets and small devices
+        'laptop': '1024px',  // Standard laptops
+        'desktop': '1280px', // Larger desktops
+        'wide': '1440px',    // Wide screens
+        'ultrawide': '1920px' // Ultra-wide screens
+      },
     },
   },
   plugins: [],

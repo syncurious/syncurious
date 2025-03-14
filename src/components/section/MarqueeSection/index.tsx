@@ -13,11 +13,6 @@ export default function MarqueeSection() {
   useEffect(() => {
     const marqueeElement = marqueeRef.current;
 
-    // ScrollSmoother.create({
-    //   smooth: 2, // Adjust for more smoothness
-    //   effects: true,
-    // });
-
     if (marqueeElement) {
       gsap.to(marqueeElement, {
         xPercent: -80,
@@ -27,7 +22,6 @@ export default function MarqueeSection() {
           start: "top bottom", // Start when the bottom of the element hits the bottom of the viewport
           end: "bottom top",         // End when the top of the element hits the top of the viewport
           scrub: 1,
-          markers: true,
         },
       });
     }
@@ -38,9 +32,9 @@ export default function MarqueeSection() {
       <div ref={marqueeRef} className="w-full h-full">
         <Heading
           level={1}
-          className="!text-[44vw] flex justify-center items-center h-full w-full !pb-20"
+          className="!text-[44vw] flex justify-center items-center h-full w-full !pb-[10%]"
         >
-          syncurıous
+          syncurıous  
         </Heading>
       </div>
     </div>

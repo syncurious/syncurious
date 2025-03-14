@@ -14,11 +14,11 @@ import MarqueeSection from "@/components/section/MarqueeSection";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      {/* <Container>
+      <Container>
         <Section>
           <HeroSection />
         </Section>
-      </Container> */}
+      </Container>
       <SecondaryContainer
         extraComponent={
           <div className="absolute h-full w-full left-0">
@@ -37,7 +37,7 @@ export default function Home() {
           <PortfolioSection />
         </Section>
       </SecondaryContainer>
-      <Section className="green-transparent-gardient !h-[50vh]">
+      <Section className="green-transparent-gardient !h-[60vw] my-10">
           <MarqueeSection />
         </Section>
       <SecondaryContainer
