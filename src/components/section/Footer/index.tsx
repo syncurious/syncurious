@@ -18,8 +18,8 @@ export default function FooterSection() {
   return (
     <footer className="">
       <Section className=" !h-full p-10">
-        <div className="grid grid-cols-12 gap-5 justify-between grid-flow-col">
-          <div className="col-span-4 h-full flex flex-col gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 justify-between grid-flow-col">
+          <div className="col-span-4  h-full flex flex-col gap-2">
             <div className="flex flex-col gap-5 pr-6 ">
               <Heading level={3} className="font-semibold">
                 Let’s Elevate Your Digital Presence
@@ -92,7 +92,7 @@ export default function FooterSection() {
               </div>
             </div>
           </div>
-          <div className="col-span-3 flex flex-col gap-5 justify-self-center">
+          <div className="col-span-3 hidden md:flex  flex-col gap-5 justify-self-center">
             <Heading level={6}>Overview</Heading>
             <ul
               className="flex ml-7 flex-col gap-1"
@@ -125,7 +125,7 @@ export default function FooterSection() {
               </li>
             </ul>
           </div>
-          <div className="col-span-3 flex flex-col gap-5">
+          <div className="col-span-3 hidden md:flex  flex-col gap-5">
             <Heading level={6}>Solutions</Heading>
             <ul
               className="flex ml-7 flex-col gap-1"
@@ -173,7 +173,7 @@ export default function FooterSection() {
               </li>
             </ul>
           </div>
-          <div className="col-span-3 flex flex-col gap-5">
+          <div className="col-span-3 hidden md:flex  flex-col gap-5">
             <Heading level={6}>Highlighted Services</Heading>
             <ul
               className="flex ml-7 flex-col gap-1"
