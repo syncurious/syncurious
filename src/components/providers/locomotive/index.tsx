@@ -12,7 +12,7 @@ export default function SmoothScrollProvider({
 
   useEffect(() => {
     const locoScroll = new LocomotiveScroll({
-      el: scrollRef.current,
+      el: scrollRef.current as unknown as HTMLElement,
       smooth: true,
     });
 
