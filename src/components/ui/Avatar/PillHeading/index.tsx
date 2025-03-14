@@ -1,5 +1,5 @@
 import Paragraph from "@/components/base/Paragraph";
-import React, { Children } from "react";
+import React from "react";
 
 interface Props {
   children: React.ReactNode;

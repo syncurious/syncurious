@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
 import Heading from "@/components/base/heading";
 
 gsap.registerPlugin(ScrollTrigger);
