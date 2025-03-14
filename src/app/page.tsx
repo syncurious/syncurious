@@ -37,7 +37,7 @@ export default function Home() {
           <PortfolioSection />
         </Section>
       </SecondaryContainer>
-      <Section className="green-transparent-gardient !h-[50vh]">
+      <Section className="green-transparent-gardient !h-[60vw] my-10">
           <MarqueeSection />
         </Section>
       <SecondaryContainer
