@@ -18,9 +18,9 @@ export default function FooterSection() {
   return (
     <footer className="">
       <Section className=" !h-full p-10">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 justify-between grid-flow-col">
-          <div className="col-span-4  h-full flex flex-col gap-2">
-            <div className="flex flex-col gap-5 pr-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-5 justify-between grid-flow-col">
+          <div className="col-span-4  h-full flex flex-col md:gap-2">
+            <div className="flex flex-col gap-2 md:gap-5 md:pr-6 ">
               <Heading level={3} className="font-semibold">
                 Let’s Elevate Your Digital Presence
               </Heading>
@@ -34,8 +34,8 @@ export default function FooterSection() {
                 Reach out and we’ll be in touch soon!
               </Paragraph>
             </div>
-            <Divider thickness="2px" />
-            <div className="flex flex-col gap-2 pr-6">
+            <Divider className="!border md:border-2" />
+            <div className="flex flex-col gap-2 md:pr-6">
               <Paragraph level={5}>
                 Office # 17, Second Floor, CMA Tower, Block-6, Gulshan-e-Iqbal,
                 Karachi, Pakistan.
@@ -47,51 +47,52 @@ export default function FooterSection() {
                 <a href="tel:+923272199402">+923272199402</a>
               </Paragraph>
             </div>
-            <div className="flex flex-col gap-4 pr-6 mt-4">
+            <div className="flex flex-col gap-2 md:gap-4 pr-6 mt-4">
               <Paragraph level={4}>Start the conversation!</Paragraph>
-              <div className="flex gap-2">
-                <div className="border rounded-md h-10 aspect-square flex items-center justify-center">
+              <div className="flex gap-2 flex-wrap">
+                <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a
                     href="https://www.linkedin.com/company/Syncurious"
                     target="_blank"
                   >
-                    <FaLinkedinIn size={20} />
+                    <FaLinkedinIn className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
                   </a>
                 </div>
-                <div className="border rounded-md h-10 aspect-square flex items-center justify-center">
+                <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a
                     href="https://www.instagram.com/syncurious"
                     target="_blank"
                   >
-                    <FaInstagram size={20} />
+                    <FaInstagram className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
                   </a>
                 </div>
-                <div className="border rounded-md h-10 aspect-square flex items-center justify-center">
+                <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a href="https://www.facebook.com/syncurious" target="_blank">
-                    <FaFacebookF size={20} />
+                    <FaFacebookF className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
                   </a>
                 </div>
-                <div className="border rounded-md h-10 aspect-square flex items-center justify-center">
+                <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a href="tel:+923272199402" target="_blank">
-                    <FaPhoneAlt size={20} />
+                    <FaPhoneAlt className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
                   </a>
                 </div>
-                <div className="border rounded-md h-10 aspect-square flex items-center justify-center">
+                <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a
                     href="https://api.whatsapp.com/send?phone=033272199402"
                     target="_blank"
                   >
-                    <FaWhatsapp size={20} />
+                    <FaWhatsapp className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
                   </a>
                 </div>
-                <div className="border rounded-md h-10 aspect-square flex items-center justify-center">
+                <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a href="mailto:Syncurious@gmail.com" target="_blank">
-                    <FaEnvelope size={20} />
+                    <FaEnvelope className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
                   </a>
                 </div>
               </div>
             </div>
           </div>
+          {/*  */}
           <div className="col-span-3 hidden md:flex  flex-col gap-5 justify-self-center">
             <Heading level={6}>Overview</Heading>
             <ul
@@ -217,7 +218,7 @@ export default function FooterSection() {
             </ul>
           </div>
         </div>
-        <Divider thickness="2px" className="!my-8" />
+        <Divider  className="!my-6 md:my-8 border md:border-2 " />
         <div className="">
           <Paragraph level={5} className="text-center">
             © 2025 Syncurious. All rights reserved.
