@@ -10,7 +10,7 @@ export default function Section({ style, className, children }: Props) {
   return (
     <section
       style={style}
-      className={`w-full h-screen max-h-[50rem] ${className}`}
+      className={`w-full h-full md:h-screen max-h-[50rem] ${className}`}
     >
       {children}
     </section>

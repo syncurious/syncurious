@@ -35,14 +35,14 @@ export default function SectionHeader({
             <PillHeading>{button}</PillHeading>
           </div>
         )}
-        <div className="flex flex-col items-center gap-y-5 text-center">
+        <div className="flex flex-col items-center gap-y-2 md:gap-y-5 text-center">
           {heading && (
             <Heading level={1} fontPrimary gradient className="px-5">
               {heading}
             </Heading>
           )}
           {paragraph && (
-            <Paragraph level={4} className="text-white w-[50%]  block">
+            <Paragraph level={4} className="text-white md:w-[50%]  block">
               {paragraph}
             </Paragraph>
           )}
