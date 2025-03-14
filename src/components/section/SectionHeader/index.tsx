@@ -1,6 +1,7 @@
 import Divider from "@/components/base/Divider";
 import Heading from "@/components/base/heading";
 import Paragraph from "@/components/base/Paragraph";
+import PillHeading from "@/components/ui/Avatar/PillHeading";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -31,9 +32,7 @@ export default function SectionHeader({
       <div className="flex flex-col justify-between gap-5">
         {button && (
           <div className="btn w-full flex justify-center">
-            <button className="rounded-full py-1 px-4 border border-white hover:border-primary hover:text-primary text-white">
-              {button}
-            </button>
+            <PillHeading>{button}</PillHeading>
           </div>
         )}
         <div className="flex flex-col items-center gap-y-5 text-center">
