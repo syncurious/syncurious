@@ -8,9 +8,9 @@ import Divider from "@/components/base/Divider";
 export default function TestimonialsSection() {
   return (
     <SectionHeader button="Testimonials" heading="What Our Clients Say">
-      <div className="h-[90%] flex justify-center px-[15rem]">
-        <div className="grid grid-cols-3 gap-3 content-center">
-        <div className="flex flex-col rounded-2xl p-6 gap-4">
+      <div className="h-[90%] flex justify-center md:px-[15rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-3 content-center">
+          <div className="flex flex-col rounded-2xl p-3 md:p-6 border md:border-0 gap-2 md:gap-4">
             <div className="flex gap-2 items-center ">
               <div className="h-15 border-2 border-primary rounded-full aspect-square overflow-hidden">
                 <Avatar
@@ -31,7 +31,7 @@ export default function TestimonialsSection() {
               <img src="https://img.icons8.com/?size=40&id=q4Sjf9PaySwr&format=png&color=FFFFFF" />
             </div>
           </div>
-          <div className="flex flex-col rounded-2xl p-6 gap-4">
+          <div className="flex flex-col rounded-2xl p-3 md:p-6 border md:border-0 gap-2 md:gap-4">
             <div className="flex gap-2 items-center ">
               <div className="h-15 border-2 border-primary rounded-full aspect-square overflow-hidden">
                 <Avatar
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
               <img src="https://img.icons8.com/?size=40&id=q4Sjf9PaySwr&format=png&color=FFFFFF" />
             </div>
           </div>
-          <div className="flex flex-col rounded-2xl p-6 gap-4">
+          <div className="flex flex-col rounded-2xl p-3 md:p-6 border md:border-0 gap-2 md:gap-4">
             <div className="flex gap-2 items-center ">
               <div className="h-15 border-2 border-primary rounded-full aspect-square overflow-hidden">
                 <Avatar
