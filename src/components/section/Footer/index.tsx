@@ -49,7 +49,7 @@ export default function FooterSection() {
             </div>
             <div className="flex flex-col gap-2 md:gap-4 pr-6 mt-4">
               <Paragraph level={4}>Start the conversation!</Paragraph>
-              <div className="flex gap-2 flex-wrap">
+              <div className="flex gap-2 flex-wrap md:flex-nowrap">
                 <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a
                     href="https://www.linkedin.com/company/Syncurious"

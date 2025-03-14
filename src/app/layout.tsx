@@ -98,7 +98,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${primaryFont.variable} antialiased`}
       >
-        {/* <Header /> */}
+        <Header className="hidden lg:block"/>
         <SmoothScrollProvider>
         {children}
         </SmoothScrollProvider>
