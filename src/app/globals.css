@@ -49,6 +49,30 @@
   );
 }
 
+/* Apply to the body or a specific container */
+html {
+  overflow: overlay;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Make track fully transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
@@ -70,6 +94,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.green-transparent-gardient {
+  background: rgb(0,175,0);
+  background: linear-gradient(0deg, rgba(0,175,0,1) 3%, rgba(0,8,0,0) 37%, rgba(0,8,0,0) 68%, rgba(0,175,0,1) 100%);}
 
 .footer-gradient {
   background: rgb(0, 159, 0);
@@ -101,6 +129,30 @@ body {
 
 /* Others */
 
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 9s linear infinite;
+}
+
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 .absolute-center {
   position: absolute;
   top: 50%;
@@ -118,29 +170,6 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-
-/* Apply to the body or a specific container */
-html {
-  overflow: overlay;
-}
-
-/* Scrollbar Styles */
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent; /* Make track fully transparent */
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3); /* Semi-transparent */
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
 }
 
 .gradient-border-card {

@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import local from "next/font/local";
 import "./globals.css";
 import Header from "@/components/section/header";
+import SmoothScrollProvider from "@/components/providers/locomotive";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -98,7 +99,9 @@ export default function RootLayout({
         className={`${poppins.variable} ${primaryFont.variable} antialiased`}
       >
         <Header />
+        <SmoothScrollProvider>
         {children}
+        </SmoothScrollProvider>
       </body>
     </html>
   );

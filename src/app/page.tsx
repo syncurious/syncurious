@@ -9,15 +9,16 @@ import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
 import CTASection from "@/components/section/Home/CTASection";
 import HeroSection from "@/components/section/hero";
+import MarqueeSection from "@/components/section/MarqueeSection";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <Container>
+      {/* <Container>
         <Section>
           <HeroSection />
         </Section>
-      </Container>
+      </Container> */}
       <SecondaryContainer
         extraComponent={
           <div className="absolute h-full w-full left-0">
@@ -35,6 +36,18 @@ export default function Home() {
         <Section>
           <PortfolioSection />
         </Section>
+      </SecondaryContainer>
+      <Section className="green-transparent-gardient !h-[50vh]">
+          <MarqueeSection />
+        </Section>
+      <SecondaryContainer
+        extraComponent={
+          <div className="absolute h-full w-full left-0">
+            <div className="absolute z-[1] -top-[10%] -right-[10%] gradient-primary-to-transparent h-[30rem] w-[30rem] blur-3xl" />
+            <div className="absolute z-[1] -bottom-[10%] -left-[10%] gradient-primary-to-transparent h-[25rem] w-[25rem] blur-3xl" />
+          </div>
+        }
+      >
         <Section>
           <OurServicesSection />
         </Section>
