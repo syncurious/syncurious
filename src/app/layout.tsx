@@ -98,7 +98,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${primaryFont.variable} antialiased`}
       >
-        <Header />
+        {/* <Header /> */}
         <SmoothScrollProvider>
         {children}
         </SmoothScrollProvider>

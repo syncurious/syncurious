@@ -4,11 +4,11 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <div className="relative h-full p-[8%] flex justify-center items-center">
-      <SphereBackgound className="z-0" />
-      <div className="max-w-[50%] z-10 flex flex-col justify-between  h-full w-full border-primary">
-        <div>
-          <Heading level={1} gradient={true} fontPrimary={true}>
+    <div className="relative h-full p-[8%] px-10 flex justify-center items-center">
+      {/* <SphereBackgound className="z-0" /> */}
+      <div className=" border md:max-w-[50%] z-10 flex flex-col justify-between  h-full w-full border-primary">
+        <div className="py-20 md:py-0">
+          <Heading level={1} gradient={true} fontPrimary={true} className="!leading-snug">
             Empowering IT, ICT & ELV Businesses for the Digital Age
           </Heading>
         </div>

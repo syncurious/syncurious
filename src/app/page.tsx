@@ -14,11 +14,11 @@ import MarqueeSection from "@/components/section/MarqueeSection";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      {/* <Container>
+      <Container>
         <Section>
           <HeroSection />
         </Section>
-      </Container> */}
+      </Container>
       <SecondaryContainer
         extraComponent={
           <div className="absolute h-full w-full left-0">
