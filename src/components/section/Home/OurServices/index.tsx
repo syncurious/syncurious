@@ -12,9 +12,9 @@ export default function ServicesSection() {
       heading="Our Services Speak for Themselves"
       paragraph="We blend innovation with experience to deliver outstanding digital solutions. Our expert team is dedicated to understanding your unique needs."
     >
-      <div className="md:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <div className="gradient-border-card flex flex-col rounded-2xl p-6 gap-2 !bg-[#ffffff0b]">
+      <div className="lg:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center">
+          <div className="gradient-border-card flex flex-col rounded-2xl max-w-[25rem] p-6 gap-2 !bg-[#ffffff0b]">
             <div className="flex gap-2 items-center">
               <div className="h-[30px] w-[30px]">
                 <img
@@ -31,7 +31,7 @@ export default function ServicesSection() {
               truly reflect your brand's personality.
             </Paragraph>
           </div>
-          <div className="gradient-border-card flex flex-col rounded-2xl p-6 gap-2 !bg-[#ffffff0b]">
+          <div className="gradient-border-card flex flex-col rounded-2xl max-w-[25rem] p-6 gap-2 !bg-[#ffffff0b]">
             <div className="flex gap-2 items-center">
               <div className="h-[30px] w-[30px]">
                 <img
@@ -48,7 +48,7 @@ export default function ServicesSection() {
               reflects your expertise.
             </Paragraph>
           </div>
-          <div className="gradient-border-card flex flex-col rounded-2xl p-6 gap-2 !bg-[#ffffff0b]">
+          <div className="gradient-border-card flex flex-col rounded-2xl max-w-[25rem] p-6 gap-2 !bg-[#ffffff0b]">
             <div className="flex gap-2 items-center">
               <div className="h-[30px] w-[30px]">
                 <img

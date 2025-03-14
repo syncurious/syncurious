@@ -13,8 +13,8 @@ export default function PortfolioSection() {
       paragraph='Printers in the 1500s scrambled the words from Cicero "De Minibus Nongourmet Dolores after mixing the words in each sentence. They abbreviated the word Dolores, which means pain.'
     >
       <div className="md:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 px-3 gap-5">
-          <div className="relative gradient-border-card w-full h-[250px] max-h-[350px] rounded-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-3 gap-5 justify-items-center">
+          <div className="relative gradient-border-card w-full h-[250px] max-w-[30rem] max-h-[350px] rounded-2xl">
             <img
               alt="project image"
               height={350}
@@ -51,7 +51,7 @@ export default function PortfolioSection() {
               </div>
             </div>
           </div>
-          <div className="relative gradient-border-card w-full h-[250px] max-h-[350px] rounded-2xl">
+          <div className="relative gradient-border-card w-full h-[250px] max-w-[30rem] max-h-[350px] rounded-2xl">
             <img
               alt="project image"
               height={350}
