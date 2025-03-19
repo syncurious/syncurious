@@ -50,7 +50,7 @@ export default function SectionHeader({
       </div>
       {children}
       {underline ? (
-        <div className="px-10">
+        <div className="md:px-10">
           <Divider thickness="2px" className="rounded-full" />
         </div>
       ) : null}
