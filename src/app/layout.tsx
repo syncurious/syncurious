@@ -102,7 +102,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${primaryFont.variable} antialiased h-full relative`}
       >
-        <Header className="hidden lg:block" />
+        <Header />
         {children}
       </body>
     </html>
