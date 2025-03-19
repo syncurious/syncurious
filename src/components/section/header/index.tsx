@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Logo from "@/assets/icon/logo.png";
 import React from "react";
-import Container from "@/components/section/container";
 import SecondaryContainer from "../container/SecondaryContainer";
 
 interface Props {
