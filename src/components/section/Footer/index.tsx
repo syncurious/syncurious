@@ -5,11 +5,11 @@ import Section from "../";
 import Paragraph from "@/components/base/Paragraph";
 import Divider from "@/components/base/Divider";
 import {
-  FaEnvelope,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaPhoneAlt,
+  FaRegEnvelope,
   FaWhatsapp,
 } from "react-icons/fa";
 import Link from "next/link";
@@ -86,7 +86,7 @@ export default function FooterSection() {
                 </div>
                 <div className="border rounded-md h-8 md:h-10 aspect-square flex items-center justify-center">
                   <a href="mailto:Syncurious@gmail.com" target="_blank">
-                    <FaEnvelope className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
+                    <FaRegEnvelope className="text-xs sm:text-xs md:text-xs lg:text-xs xl:text-sm" />
                   </a>
                 </div>
               </div>

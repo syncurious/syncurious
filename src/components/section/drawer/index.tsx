@@ -10,7 +10,7 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
     <>
       {/* Overlay */}
       <div 
-        className={`fixed inset-0 bg-black bg-opacity-30 transition-opacity z-30 ${
+        className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity z-30 ${
           isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={onClose}
@@ -18,7 +18,7 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
       
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full bg-blur w-64 bg-foreground  shadow-lg transform transition-transform z-40 ${
+        className={`fixed top-0 right-0 h-full w-64 bg-background shadow-lg transform transition-transform z-40 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

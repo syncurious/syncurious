@@ -1,9 +1,10 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Logo from "@/assets/icon/logo.png";
 import React, { useState } from "react";
 import SecondaryContainer from "../container/SecondaryContainer";
 import Drawer from "../drawer";
+import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
 
 interface Props {
   style?: React.CSSProperties;
@@ -16,7 +17,10 @@ function Header(props: Props) {
 
   return (
     <header style={style} className={`${className}`}>
-      <SecondaryContainer className="!fixed z-20 !h-[60px] !bg-transparent" overlayClassName="!blur-lg">
+      <SecondaryContainer
+        className="!fixed z-20 !h-[60px] !bg-transparent"
+        overlayClassName="!blur-lg"
+      >
         <nav className="h-full flex absolute-x-center z-10 items-center flex-row justify-between w-[calc(90%)] fixed">
           <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full p-5 rounded-lg" />
           <div id="logo">
@@ -25,24 +29,43 @@ function Header(props: Props) {
           <div id="navigations" className="flex text-white gap-3">
             {/* Desktop Navigation */}
             <ul className="hidden md:flex flex-row text-white gap-10">
-              <li><a href="Home">Home</a></li>
-              <li><a href="AboutUs">About Us</a></li>
-              <li><a href="Services">Services</a></li>
-              <li><a href="Portfolio">Portfolio</a></li>
-              <li><a href="Blogs">Blogs</a></li>
-              <li><a href="Contact">Contact</a></li>
+              <li>
+                <a href="Home">Home</a>
+              </li>
+              <li>
+                <a href="AboutUs">About Us</a>
+              </li>
+              <li>
+                <a href="Services">Services</a>
+              </li>
+              <li>
+                <a href="Portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="Blogs">Blogs</a>
+              </li>
+              <li>
+                <a href="Contact">Contact</a>
+              </li>
             </ul>
             <div className="hidden md:block divider">
               <hr />
             </div>
-            <div id="social-links" className="hidden md:block">
+            <div id="social-links" className="hidden md:flex justify-center items-center">
               <ul className="flex flex-row gap-2">
-                <button>W</button>
-                <button>M</button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=033272199402"
+                  target="_blank"
+                >
+                  <FaWhatsapp className="text-primary" />
+                </a>
+                <a href="mailto:Syncurious@gmail.com" target="_blank">
+                  <FaRegEnvelope className="text-primary" />
+                </a>
               </ul>
             </div>
             {/* Mobile Menu Button */}
-            <button 
+            <button
               className="md:hidden text-white"
               onClick={() => setIsDrawerOpen(true)}
             >
