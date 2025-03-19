@@ -100,7 +100,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${poppins.variable} ${primaryFont.variable} antialiased`}
+        className={`${poppins.variable} ${primaryFont.variable} antialiased h-full relative`}
       >
         <Header className="hidden lg:block" />
         {children}

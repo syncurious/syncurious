@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "@/assets/icon/logo.png";
 import React from "react";
 import Container from "@/components/section/container";
+import SecondaryContainer from "../container/SecondaryContainer";
 
 interface Props {
   style?: React.CSSProperties;
@@ -12,9 +13,10 @@ function Header(props: Props) {
   const { style, className } = props;
   return (
     <header style={style} className={`${className}`}>
-      <Container className="relative">
-        <nav className="h-[60px] flex absolute-x-center z-10 items-center my-2 flex-row justify-between w-[calc(90%)] fixed">
-          <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full bg-gradient-to-r from-white/5 to-background/5 p-5 rounded-lg" />
+      <SecondaryContainer className="!fixed z-20 !h-[60px] !bg-transparent" overlayClassName="!blur-lg"
+      >
+        <nav className="h-full flex absolute-x-center z-10 items-center flex-row justify-between w-[calc(90%)] fixed">
+          <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full p-5 rounded-lg" />
           <div id="logo">
             <Image src={Logo} alt="Syncurious Logo" width={0} height={50} />
           </div>
@@ -53,7 +55,7 @@ function Header(props: Props) {
             </div>
           </div>
         </nav>
-      </Container>
+      </SecondaryContainer>
     </header>
   );
 }
