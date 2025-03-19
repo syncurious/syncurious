@@ -18,13 +18,13 @@ function Header(props: Props) {
   return (
     <header style={style} className={`${className}`}>
       <SecondaryContainer
-        className="!fixed z-20 !h-[60px] !bg-transparent"
+        className="!fixed z-20 !h-[60px] !bg-transparent border-b border-white/5"
         overlayClassName="!blur-lg"
       >
         <nav className="h-full flex absolute-x-center z-10 items-center flex-row justify-between w-[calc(90%)] fixed">
           <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full p-5 rounded-lg" />
           <div id="logo">
-            <Image src={Logo} alt="Syncurious Logo" width={0} height={50} />
+            <Image src={Logo} alt="Syncurious Logo" width={100} height={100} className="h-[40px] w-full sm:h-[]" />
           </div>
           <div id="navigations" className="flex text-white gap-3">
             {/* Desktop Navigation */}
