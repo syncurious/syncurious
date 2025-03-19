@@ -39,22 +39,22 @@ function Header(props: Props) {
             {/* Desktop Navigation */}
             <ul className="hidden md:flex flex-row text-white gap-10">
               <li>
-                <a href="Home">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="AboutUs">About Us</a>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li>
-                <a href="Services">Services</a>
+                <Link href="/services">Services</Link>
               </li>
               <li>
-                <a href="Portfolio">Portfolio</a>
+                <Link href="/portfolio">Portfolio</Link>
               </li>
               <li>
-                <a href="Blogs">Blogs</a>
+                <Link href="/blogs">Blogs</Link>
               </li>
               <li>
-                <a href="Contact">Contact</a>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
             <div className="hidden md:block divider">

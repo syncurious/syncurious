@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 interface DrawerProps {
   isOpen: boolean;
@@ -28,24 +29,24 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
             ✕
           </button>
           <nav className="flex flex-col text-white gap-4">
-            <a href="Home" className="hover:text-gray-300">
+            <Link href="/" className="hover:text-gray-300">
               Home
-            </a>
-            <a href="AboutUs" className="hover:text-gray-300">
+            </Link>
+            <Link href="/about-us" className="hover:text-gray-300">
               About Us
-            </a>
-            <a href="Services" className="hover:text-gray-300">
+            </Link>
+            <Link href="/services" className="hover:text-gray-300">
               Services
-            </a>
-            <a href="Portfolio" className="hover:text-gray-300">
+            </Link>
+            <Link href="/portfolio" className="hover:text-gray-300">
               Portfolio
-            </a>
-            <a href="Blogs" className="hover:text-gray-300">
+            </Link>
+            <Link href="/blogs" className="hover:text-gray-300">
               Blogs
-            </a>
-            <a href="Contact" className="hover:text-gray-300">
+            </Link>
+            <Link href="/contact" className="hover:text-gray-300">
               Contact
-            </a>
+            </Link>
           </nav>
           <div className="mt-4 pt-4 border-t border-gray-600">
             <div className="flex gap-2">
