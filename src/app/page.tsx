@@ -10,6 +10,7 @@ import Container from "@/components/section/container";
 import CTASection from "@/components/section/Home/CTASection";
 import HeroSection from "@/components/section/hero";
 import MarqueeSection from "@/components/section/MarqueeSection";
+import BackgroundBlob from "@/components/ui/blobBackground";
 
 export default function Home() {
   return (
@@ -19,42 +20,34 @@ export default function Home() {
           <HeroSection />
         </Section>
       </Container>
-      <SecondaryContainer
-        extraComponent={
-          <div className="absolute h-full w-full left-0">
-            <div className="absolute z-[1] -top-[10%] -right-[10%] gradient-primary-to-transparent h-[30rem] w-[30rem] blur-3xl" />
-            <div className="absolute z-[1] -bottom-[10%] -left-[10%] gradient-primary-to-transparent h-[25rem] w-[25rem] blur-3xl" />
-          </div>
-        }
-      >
-        <Section>
+      <SecondaryContainer>
+        <Section className="relative">
+          <BackgroundBlob />
           <ClientTrustSection />
         </Section>
         <Section>
+          <BackgroundBlob />
           <WhyChooseUsSection />
         </Section>
         <Section>
+          <BackgroundBlob />
           <PortfolioSection />
         </Section>
       </SecondaryContainer>
       <Section className="green-transparent-gardient !h-[60vw] my-10">
-          <MarqueeSection />
-        </Section>
-      <SecondaryContainer
-        extraComponent={
-          <div className="absolute h-full w-full left-0">
-            <div className="absolute z-[1] -top-[10%] -right-[10%] gradient-primary-to-transparent h-[30rem] w-[30rem] blur-3xl" />
-            <div className="absolute z-[1] -bottom-[10%] -left-[10%] gradient-primary-to-transparent h-[25rem] w-[25rem] blur-3xl" />
-          </div>
-        }
-      >
+        <MarqueeSection />
+      </Section>
+      <SecondaryContainer>
         <Section>
+          <BackgroundBlob />
           <OurServicesSection />
         </Section>
         <Section>
+          <BackgroundBlob />
           <TestimonialsSection />
         </Section>
         <Section>
+          <BackgroundBlob />
           <CTASection />
         </Section>
       </SecondaryContainer>
