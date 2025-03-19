@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import SecondaryContainer from "../container/SecondaryContainer";
 import Drawer from "../drawer";
 import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 interface Props {
   style?: React.CSSProperties;
@@ -23,9 +24,17 @@ function Header(props: Props) {
       >
         <nav className="h-full flex absolute-x-center z-10 items-center flex-row justify-between w-[calc(90%)] fixed">
           <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full p-5 rounded-lg" />
-          <div id="logo">
-            <Image src={Logo} alt="Syncurious Logo" width={100} height={100} className="h-[40px] w-full sm:h-[]" />
-          </div>
+          <Link href='/'>
+            <div id="logo">
+              <Image
+                src={Logo}
+                alt="Syncurious Logo"
+                width={500}
+                height={500}
+                className="h-[40px] w-full sm:h-[50px]"
+              />
+            </div>
+          </Link>
           <div id="navigations" className="flex text-white gap-3">
             {/* Desktop Navigation */}
             <ul className="hidden md:flex flex-row text-white gap-10">
@@ -51,7 +60,10 @@ function Header(props: Props) {
             <div className="hidden md:block divider">
               <hr />
             </div>
-            <div id="social-links" className="hidden md:flex justify-center items-center">
+            <div
+              id="social-links"
+              className="hidden md:flex justify-center items-center"
+            >
               <ul className="flex flex-row gap-2">
                 <a
                   href="https://api.whatsapp.com/send?phone=033272199402"
