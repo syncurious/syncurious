@@ -15,7 +15,7 @@ import BackgroundBlob from "@/components/ui/blobBackground";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <Container>
+      <Container className="p-0">
         <Section>
           <HeroSection />
         </Section>
