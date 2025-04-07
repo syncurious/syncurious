@@ -23,7 +23,7 @@ function Header(props: Props) {
         overlayClassName="!blur-lg"
       >
         <nav className="h-full flex absolute-x-center z-10 items-center flex-row justify-between w-[calc(90%)] fixed">
-          <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full p-5 rounded-lg" />
+          {/* <div className="absolute top-0 left-[-.5rem] w-[calc(100%+1rem)] h-full p-5 rounded-lg" /> */}
           <Link href='/'>
             <div id="logo">
               <Image
