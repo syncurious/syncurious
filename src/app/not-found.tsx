@@ -1,8 +1,6 @@
 import Container from "@/components/section/container";
-
 import notFound from "@/assets/gif/404.gif"; // Adjust the path as necessary
 import Image from "next/image";
-import Heading from "@/components/base/heading";
 import Paragraph from "@/components/base/Paragraph";
 
 export default function NotFound() {
