@@ -3,7 +3,7 @@ import Paragraph from "@/components/base/Paragraph";
 import { WhyChooseUsSectionsOptions } from "@/constant";
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import SectionHeader from "../../SectionHeader";
+import SectionHeader from "../../section/SectionHeader";
 
 export default function WhyChooseUsSection() {
   const unselected =

@@ -8,7 +8,7 @@ import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
 import CTASection from "@/components/Home/CTASection";
-import HeroSection from "@/components/Home/hero";
+import HeroSection from "@/components/About/hero";
 import MarqueeSection from "@/components/section/MarqueeSection";
 import BackgroundBlob from "@/components/ui/blobBackground";
 
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <Container className="p-0" innerClassName="px-0">
-        <Section>
+        <Section className="!h-[70vh]">
           <HeroSection />
         </Section>
       </Container>

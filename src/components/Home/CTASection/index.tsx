@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SectionHeader from "../../SectionHeader";
+import SectionHeader from "../../section/SectionHeader";
 import Button from "@/components/base/Button";
 
 export default function CTASection() {

@@ -1,6 +1,6 @@
 import Heading from "@/components/base/heading";
 import React from "react";
-import SectionHeader from "../../SectionHeader";
+import SectionHeader from "../../section/SectionHeader";
 
 export default function ClientTrustSection() {
   return (

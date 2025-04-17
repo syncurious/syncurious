@@ -1,7 +1,7 @@
 "use client";
 import Paragraph from "@/components/base/Paragraph";
 import React from "react";
-import SectionHeader from "../../SectionHeader";
+import SectionHeader from "../../section/SectionHeader";
 import Avatar from "@/components/ui/Avatar";
 import Divider from "@/components/base/Divider";
 
