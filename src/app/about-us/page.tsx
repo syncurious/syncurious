@@ -1,7 +1,7 @@
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
 import ClientTrustSection from "@/components/About/Client-trust";
-import WhyChooseUsSection from "@/components/Home/WhyChooseUs";
+import GuideByValueSection from "@/components/About/Guide-By-Value";
 import PortfolioSection from "@/components/Home/Portfolio";
 import OurServicesSection from "@/components/Home/OurServices";
 import TestimonialsSection from "@/components/Home/Testimonials";
@@ -25,9 +25,9 @@ export default function Home() {
           <BackgroundBlob />
           <ClientTrustSection />
         </Section>
-        <Section>
+        <Section className="h-[100%] max-h-[100%] md:h-[100%]">
           <BackgroundBlob />
-          <WhyChooseUsSection />
+          <GuideByValueSection />
         </Section>
         <Section>
           <BackgroundBlob />
