@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Logo from "@/assets/icon/logo.png";
 import React, { useState } from "react";
 import SecondaryContainer from "../container/SecondaryContainer";
 import Drawer from "../drawer";
@@ -27,7 +26,7 @@ function Header(props: Props) {
           <Link href='/'>
             <div id="logo">
               <Image
-                src={Logo}
+                src={'/assets/icon/logo.png'}
                 alt="Syncurious Logo"
                 width={500}
                 height={500}
