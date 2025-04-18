@@ -96,8 +96,24 @@ body {
 }
 
 .green-transparent-gardient {
-  background: rgb(0,175,0);
-  background: linear-gradient(0deg, rgba(0,175,0,1) 3%, rgba(0,8,0,0) 37%, rgba(0,8,0,0) 68%, rgba(0,175,0,1) 100%);}
+  background: rgb(0, 175, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 175, 0, 1) 3%,
+    rgba(0, 8, 0, 0) 37%,
+    rgba(0, 8, 0, 0) 68%,
+    rgba(0, 175, 0, 1) 100%
+  );
+}
+
+.green-to-transparent {
+  background: #0f0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 255, 0, 1) 0%,
+    rgba(0, 255, 0, 0) 100%
+  );
+}
 
 .footer-gradient {
   background: rgb(0, 159, 0);
@@ -129,7 +145,6 @@ body {
 
 /* Others */
 
-
 @keyframes marquee {
   from {
     transform: translateX(100%);
@@ -144,7 +159,15 @@ body {
   animation: marquee 9s linear infinite;
 }
 
-
+.our-team-member-profile-card:hover our-team-social-icons{
+  background: #000 !important;
+  opacity: 0;
+}
+.our-team-member-profile-card:hover .our-team-social-icons {
+  @apply translate-y-24;
+  opacity: 1;
+  /* transform: translate(0, 24px); */
+}
 .scrollbar-hide {
   scrollbar-width: none; /* Firefox */
 }

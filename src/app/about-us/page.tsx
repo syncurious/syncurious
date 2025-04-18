@@ -2,7 +2,7 @@ import SecondaryContainer from "@/components/section/container/SecondaryContaine
 import Section from "@/components/section";
 import ClientTrustSection from "@/components/About/Client-trust";
 import GuideByValueSection from "@/components/About/Guide-By-Value";
-import PortfolioSection from "@/components/Home/Portfolio";
+import OurTeamSection from "@/components/About/Our-team";
 import OurServicesSection from "@/components/Home/OurServices";
 import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
@@ -25,13 +25,13 @@ export default function Home() {
           <BackgroundBlob />
           <ClientTrustSection />
         </Section>
-        <Section className="h-[100%] max-h-[100%] md:h-[100%]">
+        <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
           <GuideByValueSection />
         </Section>
-        <Section>
+        <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
-          <PortfolioSection />
+          <OurTeamSection />
         </Section>
       </SecondaryContainer>
       <Section className="green-transparent-gardient !h-[60vw] my-10">

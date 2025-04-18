@@ -1,4 +1,5 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 interface Props {
   children: React.ReactNode;
@@ -10,7 +11,7 @@ export default function Section({ style, className, children }: Props) {
   return (
     <section
       style={style}
-    className={`w-full h-full md:h-screen max-h-[60rem] ${className}`}
+      className={twMerge(`w-full h-full md:h-screen max-h-[60rem] `, className)}
     >
       {children}
     </section>
