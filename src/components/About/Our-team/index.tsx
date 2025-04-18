@@ -6,7 +6,7 @@ import Heading from "@/components/base/heading";
 import Image from "next/image";
 import { FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
-export default function ServicesSection() {
+export default function OurTeamSection() {
   return (
     <SectionHeader
       underline={false}
