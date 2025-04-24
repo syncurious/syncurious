@@ -45,10 +45,6 @@ export default function Home() {
         </Section>
         <Section>
           <BackgroundBlob />
-          <TestimonialsSection />
-        </Section>
-        <Section>
-          <BackgroundBlob />
           <CTASection />
         </Section>
       </SecondaryContainer>
