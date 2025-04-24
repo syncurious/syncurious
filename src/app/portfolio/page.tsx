@@ -1,17 +1,14 @@
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
-import ClientTrustSection from "@/components/Portfolio/Client-trust";
-import OurTeamSection from "@/components/Portfolio/Our-team";
-import OurServicesSection from "@/components/Portfolio/OurServices";
-import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
-import CTASection from "@/components/Home/CTASection";
+import CTASection from "@/components/Portfolio/CTASection";
 import HeroSection from "@/components/Portfolio/hero";
-import MarqueeSection from "@/components/section/MarqueeSection";
 import BackgroundBlob from "@/components/ui/blobBackground";
-import FAQsSection from "@/components/Portfolio/FAQs";
-import PortfolioSection from "@/components/Portfolio/Portfolio";
+import PortfolioWebSitesSection from "@/components/Portfolio/websiteProjects";
+import PortfolioGraphicsSection from "@/components/Portfolio/graphicsProjects";
+import PortfolioUISection from "@/components/Portfolio/uiProjects";
+import ProjectCountSection from "@/components/Portfolio/ProjectCountSection";
 
 export default function Home() {
   return (
@@ -24,7 +21,19 @@ export default function Home() {
       <SecondaryContainer>
         <Section>
           <BackgroundBlob />
-          <PortfolioSection />
+          <PortfolioWebSitesSection />
+        </Section>
+        <Section>
+          <BackgroundBlob />
+          <PortfolioGraphicsSection />
+        </Section>
+        <Section>
+          <BackgroundBlob />
+          <PortfolioUISection />
+        </Section>
+        <Section className="max-h-[30rem] md:h-[40rem] h-[40rem]">
+          <BackgroundBlob />
+          <ProjectCountSection />
         </Section>
         <Section>
           <BackgroundBlob />
