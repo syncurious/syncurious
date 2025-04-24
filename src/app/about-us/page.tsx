@@ -11,6 +11,7 @@ import CTASection from "@/components/Home/CTASection";
 import HeroSection from "@/components/About/hero";
 import MarqueeSection from "@/components/section/MarqueeSection";
 import BackgroundBlob from "@/components/ui/blobBackground";
+import FAQsSection from "@/components/About/FAQs";
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
       <SecondaryContainer>
         <Section>
           <BackgroundBlob />
-          <OurServicesSection />
+          <FAQsSection />
         </Section>
         <Section>
           <BackgroundBlob />

@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeader from "../../section/SectionHeader";
 import Heading from "@/components/base/heading";
 
-export default function ServicesSection() {
+export default function GuideByValueSection() {
   return (
     <SectionHeader
       underline={false}
