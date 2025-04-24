@@ -1,15 +1,17 @@
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
-import ClientTrustSection from "@/components/About/Client-trust";
-import GuideByValueSection from "@/components/About/Guide-By-Value";
-import OurTeamSection from "@/components/About/Our-team";
+import ClientTrustSection from "@/components/Services/Client-trust";
+import GuideByValueSection from "@/components/Services/Guide-By-Value";
+import OurTeamSection from "@/components/Services/Our-team";
+import OurServicesSection from "@/components/Home/OurServices";
+import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
 import CTASection from "@/components/Home/CTASection";
-import HeroSection from "@/components/About/hero";
+import HeroSection from "@/components/Services/hero";
 import MarqueeSection from "@/components/section/MarqueeSection";
 import BackgroundBlob from "@/components/ui/blobBackground";
-import FAQsSection from "@/components/About/FAQs";
+import FAQsSection from "@/components/Services/FAQs";
 
 export default function Home() {
   return (
@@ -20,10 +22,6 @@ export default function Home() {
         </Section>
       </Container>
       <SecondaryContainer>
-        <Section className="relative">
-          <BackgroundBlob />
-          <ClientTrustSection />
-        </Section>
         <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
           <GuideByValueSection />
