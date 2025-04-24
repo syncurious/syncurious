@@ -25,7 +25,7 @@ const steps = [
 export default function ClientTrustSection() {
   return (
     <div className="flex justify-center">
-      <div className="flex max-w-[80%] justify-center items-center gap-5 border">
+      <div className="flex max-w-[80%] justify-center items-center gap-5">
         <div className="w-[50%] p-10">
           <div className="gradient-border-card rounded-2xl">
             <Image
@@ -49,7 +49,7 @@ export default function ClientTrustSection() {
             needs. Our commitment to excellence is reflected in our high-quality
             solutions
           </Paragraph>
-          <div className="my-10">
+          <div className="mt-10">
             <VerticalStepper steps={steps} />
           </div>
         </div>

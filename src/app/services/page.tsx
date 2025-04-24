@@ -29,15 +29,15 @@ export default function Home() {
           <BackgroundBlob />
           <ClientTrustSection />
         </Section>
-        <Section className="max-h-[100%] md:h-full">
-          <BackgroundBlob />
-          <OurTeamSection />
-        </Section>
       </SecondaryContainer>
       <Section className="green-transparent-gardient !h-[60vw] my-10">
         <MarqueeSection />
       </Section>
       <SecondaryContainer>
+        <Section>
+          <BackgroundBlob />
+          <TestimonialsSection />
+        </Section>
         <Section>
           <BackgroundBlob />
           <FAQsSection />
