@@ -4,16 +4,14 @@ import SectionHeader from "../../section/SectionHeader";
 import Image from "next/image";
 import Paragraph from "@/components/base/Paragraph";
 import VerticalStepper from "@/components/ui/VerticalStepper";
-
-
-
+import Input from "@/components/base/Input";
 
 export default function ClientTrustSection() {
   return (
-    <div className="flex justify-center gradient-border-card">
-      <div className="flex max-w-[80%] justify-center items-center gap-5">
+    <div className="flex justify-center  ">
+      <div className="flex max-w-[80%] justify-center items-center gap-5 gradient-border-card rounded-2xl">
         <div className="w-[50%] p-10">
-          <div className=" rounded-2xl">
+          <div className=" rounded-2xl h-full">
             <Image
               className="w-full h-full object-cover rounded-2xl"
               src="/assets/images/our-team-member-1.png"
@@ -23,19 +21,22 @@ export default function ClientTrustSection() {
             />
           </div>
         </div>
-        <div className="w-[50%] flex flex-col justify-center items-start">
-          <Heading level={2} fontPrimary gradient>
-            Client-Trusted Solutions
-          </Heading>
-          
-          <Paragraph className=" " level={3}>
-            Join the ranks of more than 100 satisfied clients who rely on us for
-            their software and digital needs. Our commitment to excellence is
-            reflected in our high-quality solutionsJoin the ranks of more than
-            100 satisfied clients who rely on us for their software and digital
-            needs. Our commitment to excellence is reflected in our high-quality
-            solutions
-          </Paragraph>
+        <div className="w-[50%] h-full flex flex-col justify-between p-5 items-start">
+          <Heading level={2}>Send A Message </Heading>
+          <div className="w-full flex flex-col gap-5">
+            <div className="w-full">
+              <Heading level={5}>Name</Heading>
+              <Input />
+            </div>
+            <div className="w-full">
+              <Heading level={5}>Email</Heading>
+              <Input />
+            </div>
+            <div className="w-full">
+              <Heading level={5}>Message</Heading>
+              <Input as="textarea" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
