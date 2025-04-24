@@ -15,7 +15,7 @@ function HeroSection() {
             gradient={true}
             fontPrimary={true}
           >
-           About Us
+           Services
           </Heading>
         </div>
       </div>

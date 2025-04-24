@@ -8,8 +8,8 @@ export default function GuideByValueSection() {
   return (
     <SectionHeader
       underline={false}
-      button="Our Values"
-      heading="Guided by Values, Driven by Excellence"
+      button="Our Services"
+      heading="Swift and Dependable Software Performance"
       paragraph="We blend innovation with experience to deliver outstanding digital solutions. Our expert team is dedicated to understanding your unique needs."
     >
       <div className="lg:px-20">
@@ -115,60 +115,6 @@ export default function GuideByValueSection() {
               crafted to ensure seamless performance across all devices,
               delivering an engaging user.
             </Paragraph>
-          </div>
-        </div>
-        <div className="flex justify-center items-center  mt-20">
-          <div className="gradient-border-card flex flex-row rounded-2xl p-6 gap-10 !bg-[#ffffff0b]">
-            <div className="flex flex-col justify-center items-center gap-2">
-              <div className="flex gap-2 items-center">
-                <Heading
-                  fontPrimary
-                  level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
-                >
-                  10+
-                </Heading>
-              </div>
-              <Paragraph level={5}>Years of Experience</Paragraph>
-            </div>
-            
-            <div className="flex flex-col justify-center items-center gap-2">
-              <div className="flex gap-2 items-center">
-                <Heading
-                  fontPrimary
-                  level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
-                >
-                  115+
-                </Heading>
-              </div>
-              <Paragraph level={5}>Software Built</Paragraph>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-2">
-              <div className="flex gap-2 items-center">
-                <Heading
-                  fontPrimary
-                  level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
-                >
-                  56+
-                </Heading>
-              </div>
-              <Paragraph level={5}>Clients Served​</Paragraph>
-            </div>
-            <div className="flex flex-col justify-center items-center gap-2">
-              <div className="flex gap-2 items-center">
-                <Heading
-                  fontPrimary
-                  level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
-                >
-                  15+
-                </Heading>
-              </div>
-              <Paragraph level={5}>Clients Served​</Paragraph>
-            </div>
-            
           </div>
         </div>
       </div>

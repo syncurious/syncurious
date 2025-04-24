@@ -1,9 +1,8 @@
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
 import ClientTrustSection from "@/components/Services/Client-trust";
-import GuideByValueSection from "@/components/Services/Guide-By-Value";
 import OurTeamSection from "@/components/Services/Our-team";
-import OurServicesSection from "@/components/Home/OurServices";
+import OurServicesSection from "@/components/Services/OurServices";
 import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
@@ -24,7 +23,11 @@ export default function Home() {
       <SecondaryContainer>
         <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
-          <GuideByValueSection />
+          <OurServicesSection />
+        </Section>
+        <Section className="relative">
+          <BackgroundBlob />
+          <ClientTrustSection />
         </Section>
         <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
