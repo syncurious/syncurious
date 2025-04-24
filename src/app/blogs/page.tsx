@@ -5,7 +5,7 @@ import Container from "@/components/section/container";
 import CTASection from "@/components/Blogs/CTASection";
 import HeroSection from "@/components/Blogs/hero";
 import BackgroundBlob from "@/components/ui/blobBackground";
-import PortfolioWebSitesSection from "@/components/Blogs/blogs";
+import BlogsSection from "@/components/Blogs/blogs";
 import PortfolioGraphicsSection from "@/components/Blogs/graphicsProjects";
 import PortfolioUISection from "@/components/Blogs/uiProjects";
 import ProjectCountSection from "@/components/Blogs/ProjectCountSection";
@@ -19,17 +19,9 @@ export default function Home() {
         </Section>
       </Container>
       <SecondaryContainer>
-        <Section>
+        <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
-          <PortfolioWebSitesSection />
-        </Section>
-        <Section>
-          <BackgroundBlob />
-          <PortfolioGraphicsSection />
-        </Section>
-        <Section>
-          <BackgroundBlob />
-          <PortfolioUISection />
+          <BlogsSection />
         </Section>
         <Section className="max-h-[30rem] md:h-[40rem] h-[40rem]">
           <BackgroundBlob />
