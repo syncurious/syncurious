@@ -1,7 +1,6 @@
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
 import ClientTrustSection from "@/components/ContactUs/Client-trust";
-import OurServicesSection from "@/components/ContactUs/OurServices";
 import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";

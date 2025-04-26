@@ -14,7 +14,7 @@ type Props = {
   color?: string; // Tailwind color like 'green'
 };
 
-const VerticalStepper: React.FC<Props> = ({ steps, color = "green" }) => {
+const VerticalStepper: React.FC<Props> = ({ steps }) => {
   return (
     <div className="relative">
       <div

@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import SectionHeader from "../../section/SectionHeader";
-import Button from "@/components/base/Button";
 import Heading from "@/components/base/heading";
 import Paragraph from "@/components/base/Paragraph";
 

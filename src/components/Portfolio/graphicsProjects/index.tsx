@@ -2,7 +2,7 @@
 import React from "react";
 import SectionHeader from "../../section/SectionHeader";
 import ProjectCard from "@/components/ui/ProjectsCard";
-import { PortfolioGraphicsProjects, PortfolioWebsiteProjects } from "@/constant";
+import { PortfolioGraphicsProjects } from "@/constant";
 
 export default function PortfolioGraphicsSection() {
   return (

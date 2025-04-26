@@ -6,8 +6,6 @@ import CTASection from "@/components/Blogs/CTASection";
 import HeroSection from "@/components/Blogs/hero";
 import BackgroundBlob from "@/components/ui/blobBackground";
 import BlogsSection from "@/components/Blogs/blogs";
-import PortfolioGraphicsSection from "@/components/Blogs/graphicsProjects";
-import PortfolioUISection from "@/components/Blogs/uiProjects";
 import ProjectCountSection from "@/components/Blogs/ProjectCountSection";
 
 export default function Home() {

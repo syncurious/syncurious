@@ -1,4 +1,3 @@
-import Button from "@/components/base/Button";
 import Heading from "@/components/base/heading";
 import SphereBackgound from "@/lib/three/sphereBackgound";
 import React from "react";

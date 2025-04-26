@@ -19,15 +19,15 @@ export default function Home() {
         </Section>
       </Container>
       <SecondaryContainer>
-        <Section>
+        <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
           <PortfolioWebSitesSection />
         </Section>
-        <Section>
+        <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
           <PortfolioGraphicsSection />
         </Section>
-        <Section>
+        <Section className="max-h-[100%] md:h-full">
           <BackgroundBlob />
           <PortfolioUISection />
         </Section>
