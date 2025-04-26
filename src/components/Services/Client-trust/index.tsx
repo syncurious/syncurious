@@ -24,11 +24,11 @@ const steps = [
 export default function ClientTrustSection() {
   return (
     <div className="flex justify-center">
-      <div className="flex max-w-[80%] justify-center items-center gap-5">
-        <div className="w-[50%] p-10">
-          <div className="gradient-border-card rounded-2xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-[80%] justify-center items-center gap-5">
+        <div className="w-full mt-10">
+          <div className="gradient-border-card  md:block rounded-2xl">
             <Image
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full  object-cover rounded-2xl"
               src="/assets/images/our-team-member-1.png"
               alt="img"
               width={200}
@@ -36,7 +36,7 @@ export default function ClientTrustSection() {
             />
           </div>
         </div>
-        <div className="w-[50%] flex flex-col justify-center items-start">
+        <div className="flex w-full flex-col justify-center items-start">
           <Heading level={2} fontPrimary gradient>
             Client-Trusted Solutions
           </Heading>

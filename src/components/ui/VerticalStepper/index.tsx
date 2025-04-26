@@ -23,7 +23,7 @@ const VerticalStepper: React.FC<Props> = ({ steps }) => {
         <div key={index} className="mb-12 relative">
           {/* Dot */}
           <span
-            className="absolute -left-[1.5%] w-5 h-5 rounded-full"
+            className="absolute -left-[2.5%] md:-left-[1.5%] w-5 h-5 rounded-full"
             style={{
               backgroundColor: "#00FF00", // neon green
               top: "0.25rem",
@@ -32,10 +32,10 @@ const VerticalStepper: React.FC<Props> = ({ steps }) => {
 
           {/* Content */}
           <div className="pl-8">
-            <Heading level={3} className="text-white text-xl font-bold">
+            <Heading level={3} className="text-white md:text-xl font-bold">
               {step.title}
             </Heading>
-            <Paragraph level={5} className="text-white text-sm mt-2">
+            <Paragraph level={5} className="text-white text-xs md:text-sm mt-2">
               {step.description}
             </Paragraph>
           </div>
