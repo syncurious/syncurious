@@ -31,7 +31,7 @@ export default function Home() {
           <BackgroundBlob />
           <PortfolioUISection />
         </Section>
-        <Section className="max-h-[30rem] md:h-[40rem] h-[40rem]">
+        <Section className="max-h-[100%] md:h-full my-10">
           <BackgroundBlob />
           <ProjectCountSection />
         </Section>
