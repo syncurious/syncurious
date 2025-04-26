@@ -1,6 +1,5 @@
 import Heading from "@/components/base/heading";
 import React from "react";
-import SectionHeader from "../../section/SectionHeader";
 import Image from "next/image";
 import Paragraph from "@/components/base/Paragraph";
 import VerticalStepper from "@/components/ui/VerticalStepper";
