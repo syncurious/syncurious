@@ -1,37 +1,33 @@
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
-import ClientTrustSection from "@/components/Home/Client-trust";
-import WhyChooseUsSection from "@/components/Home/WhyChooseUs";
-import PortfolioSection from "@/components/Home/Portfolio";
-import OurServicesSection from "@/components/Home/OurServices";
+import ClientTrustSection from "@/components/ContactUs/Client-trust";
+import OurServicesSection from "@/components/ContactUs/OurServices";
 import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
 import CTASection from "@/components/Home/CTASection";
-import HeroSection from "@/components/Home/hero";
+import HeroSection from "@/components/ContactUs/hero";
 import MarqueeSection from "@/components/section/MarqueeSection";
 import BackgroundBlob from "@/components/ui/blobBackground";
+import FAQsSection from "@/components/ContactUs/FAQs";
+import ContactSection from "@/components/ContactUs/OurServices";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
       <Container className="p-0" innerClassName="px-0">
-        <Section>
+        <Section className="!h-[70vh]">
           <HeroSection />
         </Section>
       </Container>
       <SecondaryContainer>
+        <Section className="max-h-[100%] md:h-full">
+          <BackgroundBlob />
+          <ContactSection />
+        </Section>
         <Section className="relative">
           <BackgroundBlob />
           <ClientTrustSection />
-        </Section>
-        <Section>
-          <BackgroundBlob />
-          <WhyChooseUsSection />
-        </Section>
-        <Section>
-          <BackgroundBlob />
-          <PortfolioSection />
         </Section>
       </SecondaryContainer>
       <Section className="green-transparent-gardient !h-[60vw] my-10">
@@ -40,11 +36,11 @@ export default function Home() {
       <SecondaryContainer>
         <Section>
           <BackgroundBlob />
-          <OurServicesSection />
+          <TestimonialsSection />
         </Section>
         <Section>
           <BackgroundBlob />
-          <TestimonialsSection />
+          <FAQsSection />
         </Section>
         <Section>
           <BackgroundBlob />

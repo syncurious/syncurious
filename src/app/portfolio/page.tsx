@@ -1,50 +1,39 @@
 import SecondaryContainer from "@/components/section/container/SecondaryContainer";
 import Section from "@/components/section";
-import ClientTrustSection from "@/components/Home/Client-trust";
-import WhyChooseUsSection from "@/components/Home/WhyChooseUs";
-import PortfolioSection from "@/components/Home/Portfolio";
-import OurServicesSection from "@/components/Home/OurServices";
-import TestimonialsSection from "@/components/Home/Testimonials";
 import FooterSection from "@/components/section/Footer";
 import Container from "@/components/section/container";
-import CTASection from "@/components/Home/CTASection";
-import HeroSection from "@/components/Home/hero";
-import MarqueeSection from "@/components/section/MarqueeSection";
+import CTASection from "@/components/Portfolio/CTASection";
+import HeroSection from "@/components/Portfolio/hero";
 import BackgroundBlob from "@/components/ui/blobBackground";
+import PortfolioWebSitesSection from "@/components/Portfolio/websiteProjects";
+import PortfolioGraphicsSection from "@/components/Portfolio/graphicsProjects";
+import PortfolioUISection from "@/components/Portfolio/uiProjects";
+import ProjectCountSection from "@/components/Portfolio/ProjectCountSection";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
       <Container className="p-0" innerClassName="px-0">
-        <Section>
+        <Section className="!h-[70vh]">
           <HeroSection />
         </Section>
       </Container>
       <SecondaryContainer>
-        <Section className="relative">
+        <Section>
           <BackgroundBlob />
-          <ClientTrustSection />
+          <PortfolioWebSitesSection />
         </Section>
         <Section>
           <BackgroundBlob />
-          <WhyChooseUsSection />
+          <PortfolioGraphicsSection />
         </Section>
         <Section>
           <BackgroundBlob />
-          <PortfolioSection />
+          <PortfolioUISection />
         </Section>
-      </SecondaryContainer>
-      <Section className="green-transparent-gardient !h-[60vw] my-10">
-        <MarqueeSection />
-      </Section>
-      <SecondaryContainer>
-        <Section>
+        <Section className="max-h-[30rem] md:h-[40rem] h-[40rem]">
           <BackgroundBlob />
-          <OurServicesSection />
-        </Section>
-        <Section>
-          <BackgroundBlob />
-          <TestimonialsSection />
+          <ProjectCountSection />
         </Section>
         <Section>
           <BackgroundBlob />
