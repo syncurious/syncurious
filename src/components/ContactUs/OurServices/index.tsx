@@ -3,7 +3,6 @@ import Paragraph from "@/components/base/Paragraph";
 import React from "react";
 import SectionHeader from "../../section/SectionHeader";
 import Heading from "@/components/base/heading";
-import Divider from "@/components/base/Divider";
 import { TbLocationFilled } from "react-icons/tb";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 

@@ -1,9 +1,6 @@
 import Heading from "@/components/base/heading";
 import React from "react";
-import SectionHeader from "../../section/SectionHeader";
 import Image from "next/image";
-import Paragraph from "@/components/base/Paragraph";
-import VerticalStepper from "@/components/ui/VerticalStepper";
 import Input from "@/components/base/Input";
 
 export default function ClientTrustSection() {
