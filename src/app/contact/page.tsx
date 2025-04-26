@@ -24,7 +24,7 @@ export default function Home() {
           <BackgroundBlob />
           <ContactSection />
         </Section>
-        <Section className="relative">
+        <Section className="relative my-5">
           <BackgroundBlob />
           <ClientTrustSection />
         </Section>

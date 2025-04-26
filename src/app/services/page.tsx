@@ -24,7 +24,7 @@ export default function Home() {
           <BackgroundBlob />
           <OurServicesSection />
         </Section>
-        <Section className="relative">
+        <Section className="relative max-h-[100%] md:h-full">
           <BackgroundBlob />
           <ClientTrustSection />
         </Section>

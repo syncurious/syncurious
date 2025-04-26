@@ -6,7 +6,7 @@ export default function FAQsSection() {
   return (
     <SectionHeader button="FAQs" heading="Frequently Asked Questions">
       <div className="flex justify-center w-full">
-        <div className="flex max-w-[55%] w-full gap-5">
+        <div className="flex w-full md:max-w-[55%]  gap-5">
           <Accordion
           className="w-full"
             data={[

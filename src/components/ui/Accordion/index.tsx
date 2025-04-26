@@ -33,13 +33,13 @@ function Accordion({
         }>
           <button
             onClick={() => !item.disabled && handleToggle(index)}
-            className={`w-full p-4 text-left flex justify-between items-center
+            className={`w-full p-4 text-left flex justify-between items-center text-xs md:text-lg
               ${item.disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
             disabled={item.disabled}
           >
             <span>{item.questions}</span>
-            <span className={`transform transition-transform text-base border h-10 flex justify-center items-center rounded-full aspect-square duration-200`}>
-              {activeIndex === index ? "➖" :  "✚"}
+            <span className={`transform transition-transform text-[10px] border md:text-lg  h-[20px] md:h-10 text-center aspect-square flex justify-center items-center rounded-full duration-200`}>
+              {activeIndex === index ? "-" :  "+"}
             </span>
           </button>
           
@@ -48,7 +48,7 @@ function Accordion({
               ${activeIndex === index ? 'max-h-[500px]' : 'max-h-0'}`}
             style={{ overflow: 'hidden' }}
           >
-            <div className="p-4 ps-8 text-white p text-sm bg-white/5">
+            <div className="p-4 ps-8 text-white p text-xs md:text-base bg-white/5">
               {item.answer}
             </div>
           </div>
