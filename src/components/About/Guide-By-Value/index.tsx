@@ -117,14 +117,14 @@ export default function GuideByValueSection() {
             </Paragraph>
           </div>
         </div>
-        <div className="flex justify-center items-center  mt-20">
-          <div className="gradient-border-card flex flex-row rounded-2xl p-6 gap-10 !bg-[#ffffff0b]">
-            <div className="flex flex-col justify-center items-center gap-2">
+        <div className="flex justify-center items-center  mt-10 md:mt-20">
+          <div className="gradient-border-card flex flex-row rounded-2xl p-4 md:p-6 gap-5 md:gap-5 !bg-[#ffffff0b]">
+            <div className="flex flex-col justify-center items-center gap-0 md:gap-2">
               <div className="flex gap-2 items-center">
                 <Heading
                   fontPrimary
                   level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
+                  style={{ letterSpacing : ".3rem", fontSize: "clamp(2rem, 6vw, 5rem)" }}
                 >
                   10+
                 </Heading>
@@ -137,7 +137,7 @@ export default function GuideByValueSection() {
                 <Heading
                   fontPrimary
                   level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
+                  style={{ letterSpacing : ".3rem", fontSize: "clamp(2rem, 6vw, 5rem)" }}
                 >
                   115+
                 </Heading>
@@ -149,7 +149,7 @@ export default function GuideByValueSection() {
                 <Heading
                   fontPrimary
                   level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
+                  style={{ letterSpacing : ".3rem", fontSize: "clamp(2rem, 6vw, 5rem)" }}
                 >
                   56+
                 </Heading>
@@ -161,7 +161,7 @@ export default function GuideByValueSection() {
                 <Heading
                   fontPrimary
                   level={1}
-                  style={{ letterSpacing : ".3rem", fontSize: "clamp(3rem, 6vw, 5rem)" }}
+                  style={{ letterSpacing : ".3rem", fontSize: "clamp(2rem, 6vw, 5rem)" }}
                 >
                   15+
                 </Heading>

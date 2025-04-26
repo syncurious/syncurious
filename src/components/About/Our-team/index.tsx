@@ -15,7 +15,7 @@ export default function OurTeamSection() {
     >
       <div className="lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center">
-          <div className="gradient-border-card our-team-member-profile-card flex relative rounded-2xl w-full h-[30rem] !bg-[#ffffff0b]">
+          <div className="gradient-border-card our-team-member-profile-card flex relative rounded-2xl w-full h-[20rem] !bg-[#ffffff0b]">
             <div className="h-full w-full rounuded-2xl">
               <Image
                 height={500}
@@ -63,7 +63,7 @@ export default function OurTeamSection() {
               </div>
             </div>
           </div>
-          <div className="gradient-border-card our-team-member-profile-card flex relative rounded-2xl w-full h-[30rem] !bg-[#ffffff0b]">
+          <div className="gradient-border-card our-team-member-profile-card flex relative rounded-2xl w-full h-[20rem] !bg-[#ffffff0b]">
             <div className="h-full w-full rounuded-2xl">
               <Image
                 height={500}
@@ -111,7 +111,7 @@ export default function OurTeamSection() {
               </div>
             </div>
           </div>
-          <div className="gradient-border-card our-team-member-profile-card flex relative rounded-2xl w-full h-[30rem] !bg-[#ffffff0b]">
+          <div className="gradient-border-card our-team-member-profile-card flex relative rounded-2xl w-full h-[20rem] !bg-[#ffffff0b]">
             <div className="h-full w-full rounuded-2xl">
               <Image
                 height={500}
