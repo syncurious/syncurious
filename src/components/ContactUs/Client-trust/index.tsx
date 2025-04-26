@@ -5,9 +5,9 @@ import Input from "@/components/base/Input";
 
 export default function ClientTrustSection() {
   return (
-    <div className="flex justify-center  ">
-      <div className="flex max-w-[80%] justify-center items-center gap-5 gradient-border-card rounded-2xl">
-        <div className="w-[50%] p-10">
+    <div className="flex justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:max-w-[80%] justify-center items-center gap-5 gradient-border-card rounded-2xl">
+        <div className="hidden md:flex p-10">
           <div className=" rounded-2xl h-full">
             <Image
               className="w-full h-full object-cover rounded-2xl"
@@ -18,7 +18,7 @@ export default function ClientTrustSection() {
             />
           </div>
         </div>
-        <div className="w-[50%] h-full flex flex-col justify-between p-5 items-start">
+        <div className="h-full flex flex-col justify-between gap-5 p-5 items-start">
           <Heading level={2}>Send A Message </Heading>
           <div className="w-full flex flex-col gap-5">
             <div className="w-full">

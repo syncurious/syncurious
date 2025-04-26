@@ -16,14 +16,14 @@ export default function ContactSection() {
     >
       <div className="lg:px-20">
         <div className="gap-5 justify-items-center">
-          <div className="gradient-border-card flex flex-row rounded-2xl p-6 gap-20 !bg-[#ffffff0b]">
+          <div className="gradient-border-card flex flex-row justify-around w-full md:max-w-[30rem] rounded-2xl p-6 !bg-[#ffffff0b]">
             <div className="flex flex-col justify-center items-center gap-2">
               <div className="flex gap-2 items-center">
                 <Heading
                 className="text-primary"
                   level={1}
                   style={{
-                    fontSize: "clamp(3rem, 6vw, 5rem)",
+                    fontSize: "clamp(2rem, 6vw, 5rem)",
                   }}
                 >
                   <TbLocationFilled />
@@ -37,7 +37,7 @@ export default function ContactSection() {
                 className="text-primary"
                   level={1}
                   style={{
-                    fontSize: "clamp(3rem, 6vw, 5rem)",
+                    fontSize: "clamp(2rem, 6vw, 5rem)",
                   }}
                 >
                   <FaPhoneAlt />
@@ -51,7 +51,7 @@ export default function ContactSection() {
                 className="text-primary"
                   level={1}
                   style={{
-                    fontSize: "clamp(3rem, 6vw, 5rem)",
+                    fontSize: "clamp(2rem, 6vw, 5rem)",
                   }}
                 >
                   <FaWhatsapp />
