@@ -21,7 +21,6 @@ function HeroSection() {
         </div>
         <div>
           <div className="Button flex flex-col gap-4 justify-center items-center">
-            <ButtonV2 variant="outlined">Hellow world</ButtonV2>
             <Button variant="outlined">View Our Portfolio</Button>
             <Button color="!text-white">Contact Us</Button>
           </div>
