@@ -1,5 +1,4 @@
 import Button from "@/components/base/Button";
-import ButtonV2 from "@/components/base/ButtonV2";
 import Heading from "@/components/base/heading";
 import SphereBackgound from "@/lib/three/sphereBackgound";
 import React from "react";
