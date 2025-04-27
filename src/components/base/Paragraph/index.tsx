@@ -6,6 +6,8 @@ interface ParagraphProps extends React.HTMLAttributes<HTMLParagraphElement> {
   className?: string;
   style?: React.CSSProperties;
   level?: 1 | 2 | 3 | 4 | 5 | 6;
+  ref?: React.Ref<HTMLParagraphElement> | null;
+  [key: string]: any; // Allow any other props
 }
 
 const Paragraph: React.FC<ParagraphProps> = ({ children, className, style, level = 1, ...props }) => {

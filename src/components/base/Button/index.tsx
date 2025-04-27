@@ -1,22 +1,23 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
-import Paragraph from "../Paragraph";
-
 interface Props {
   children: string | React.ReactNode;
   onClick?: () => void;
   className?: string;
   variant?: "contained" | "outlined" | "text";
   type?: "button" | "submit" | "reset";
-  color?:string;
-  borderColor?: string; // New prop for border color
-  bgColor?: string; // New prop for background color
-  textColor?: string; // New prop for text color
+  color?: string;
+  borderColor?: string;
+  bgColor?: string;
+  textColor?: string;
+  containerClassName?: string;
 }
 
-export default function Button({
+const ButtonV2 = ({
   children,
   onClick,
+  containerClassName,
   className,
   variant = "text",
   type = "button",
@@ -24,7 +25,13 @@ export default function Button({
   color,
   bgColor,
   textColor,
-}: Props) {
+}: Props) => {
+  const buttonContainerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const textRef = useRef<HTMLSpanElement>(null);
+
+  const [isHovered, setIsHovered] = useState(false);
+
   const defaultStyles = {
     contained: {
       borderColor: "border-primary",
@@ -43,28 +50,103 @@ export default function Button({
     },
   };
 
-  // Apply default styles if props are not provided
-  const appliedBorderColor = borderColor || color || defaultStyles[variant].borderColor;
+  const appliedBorderColor =
+    borderColor || color || defaultStyles[variant].borderColor;
   const appliedBgColor = bgColor || color || defaultStyles[variant].bgColor;
-  const appliedTextColor = textColor || color || defaultStyles[variant].textColor;
+  const appliedTextColor =
+    textColor || color || defaultStyles[variant].textColor;
+
+  useEffect(() => {
+    const buttonContainer = buttonContainerRef.current;
+    const button = buttonRef.current;
+    const text = textRef.current;
+
+    if (!buttonContainer || !button) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = buttonContainer.getBoundingClientRect();
+      const buttonCenterX = rect.left + rect.width / 2;
+      const buttonCenterY = rect.top + rect.height / 2;
+
+      const deltaX = e.clientX - buttonCenterX;
+      const deltaY = e.clientY - buttonCenterY;
+
+      // Calculate distance
+      const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+      const triggerRadius = 200; // Radius to activate effect
+
+      if (distance <= triggerRadius) {
+        // Apply a fixed movement to the text
+        const ButtonSlideFactor = 0.1; // Increased text slide factor for better visibility
+        const textSlideFactor = 0.08; // Increased text slide factor for better visibility
+        const ButtonX = deltaX * ButtonSlideFactor;
+        const ButtonY = deltaY * ButtonSlideFactor;
+
+        const textX = deltaX * textSlideFactor;
+        const textY = deltaY * textSlideFactor;
+
+        button.style.transform = `translate(${ButtonX}px, ${ButtonY}px) translateZ(20px)`;
+        text
+          ? (text.style.transform = `translate(${textX}px, ${textY}px) translateZ(20px)`)
+          : null;
+        setIsHovered(true);
+      } else {
+        // Reset text position
+        button.style.transform = `translate(0px, 0px) translateZ(0px)`;
+        text
+          ? (text.style.transform = `translate(0px, 0px) translateZ(0px)`)
+          : null;
+        setIsHovered(false);
+      }
+    };
+
+    const handleMouseLeave = () => {
+      button.style.transform = `translate(0px, 0px) translateZ(0px)`;
+      text
+        ? (text.style.transform = `translate(0px, 0px) translateZ(0px)`)
+        : null;
+      setIsHovered(false);
+    };
+
+    buttonContainer.addEventListener("mousemove", handleMouseMove);
+    buttonContainer.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      buttonContainer.removeEventListener("mousemove", handleMouseMove);
+      buttonContainer.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
 
   return (
-    <button
-      type={type}
-      className={twMerge(
-        "font-medium flex justify-center items-center rounded-md h-fit text-sm px-5 py-3 me-2 mb-2 cursor-pointer",
-        variant === "outlined"
-          ? `${appliedBorderColor} border ${appliedTextColor} ${appliedBgColor} hover:bg-primary/5`
-          : variant === "contained"
-          ? `${appliedTextColor} ${appliedBgColor} border border-solid ${appliedBorderColor} hover:bg-primary/90`
-          : `${appliedTextColor} ${appliedBgColor} border-none hover:bg-primary/5`,
-        className
-      )}
-      onClick={onClick}
-    >
-      <div className="flex flex-row gap-3">
-        <Paragraph level={5} className={`${appliedTextColor} `}>{children}</Paragraph>
-      </div>
-    </button>
+    <div ref={buttonContainerRef} className={`p-2 flex jusf-center items-center ${containerClassName}`}>
+      <button
+        ref={buttonRef}
+        onClick={onClick}
+        className={twMerge(
+          "font-medium flex justify-center items-center rounded-md h-fit text-sm px-5 py-3 cursor-pointer duration-300 ",
+          variant === "outlined"
+            ? `${appliedBorderColor} border ${appliedTextColor} ${appliedBgColor} hover:bg-primary/5`
+            : variant === "contained"
+            ? `${appliedTextColor} ${appliedBgColor} border border-solid ${appliedBorderColor} hover:bg-primary/90`
+            : `${appliedTextColor} ${appliedBgColor} border-none hover:bg-primary/5`,
+          className
+        )}
+        style={{
+          perspective: "800px",
+        }}
+      >
+        <span
+          ref={textRef}
+          className={`${appliedTextColor} relative z-10 transition-transform duration-300 whitespace-nowrap`}
+          style={{
+            display: "inline-block",
+          }}
+        >
+          {children}
+        </span>
+      </button>
+    </div>
   );
-}
+};
+
+export default ButtonV2;
