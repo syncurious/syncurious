@@ -1,4 +1,5 @@
 import Button from "@/components/base/Button";
+import ButtonV2 from "@/components/base/ButtonV2";
 import Heading from "@/components/base/heading";
 import SphereBackgound from "@/lib/three/sphereBackgound";
 import React from "react";
@@ -20,6 +21,7 @@ function HeroSection() {
         </div>
         <div>
           <div className="Button flex flex-col gap-4 justify-center items-center">
+            <ButtonV2 variant="outlined">Hellow world</ButtonV2>
             <Button variant="outlined">View Our Portfolio</Button>
             <Button color="!text-white">Contact Us</Button>
           </div>

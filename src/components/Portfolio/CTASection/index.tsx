@@ -13,8 +13,8 @@ export default function CTASection() {
                     Dolores'' after mixing the words in each sentence. They abbreviated the word Dolores, which means pain.`}
     >
       <div className="flex justify-center items-center gap-5">
-        <div className="gradient-border-card !bg-[#ffffff0b] rounded-md cursor-pointer">
-          <Button textColor="text-white" className="m-0">Start Project</Button> 
+        <div className="rounded-md cursor-pointer">
+          <Button variant="contained"  textColor="text-white" className="border-0 gradient-border-card !bg-[#ffffff0b] m-0">Start Project</Button> 
           {/* 12 */}
         </div>
         <Button variant="contained" className="m-0">Talk to Our Experts</Button>
