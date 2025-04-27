@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 interface Props {
   children: string | React.ReactNode;
@@ -14,7 +14,7 @@ interface Props {
   containerClassName?: string;
 }
 
-const ButtonV2 = ({
+const Button = ({
   children,
   onClick,
   containerClassName,
@@ -29,9 +29,6 @@ const ButtonV2 = ({
   const buttonContainerRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const textRef = useRef<HTMLSpanElement>(null);
-
-  const [isHovered, setIsHovered] = useState(false);
-
   const defaultStyles = {
     contained: {
       borderColor: "border-primary",
@@ -86,26 +83,18 @@ const ButtonV2 = ({
         const textY = deltaY * textSlideFactor;
 
         button.style.transform = `translate(${ButtonX}px, ${ButtonY}px) translateZ(20px)`;
-        text
-          ? (text.style.transform = `translate(${textX}px, ${textY}px) translateZ(20px)`)
-          : null;
-        setIsHovered(true);
+        if (text)
+          text.style.transform = `translate(${textX}px, ${textY}px) translateZ(20px)`;
       } else {
         // Reset text position
         button.style.transform = `translate(0px, 0px) translateZ(0px)`;
-        text
-          ? (text.style.transform = `translate(0px, 0px) translateZ(0px)`)
-          : null;
-        setIsHovered(false);
+        if (text) text.style.transform = `translate(0px, 0px) translateZ(0px)`;
       }
     };
 
     const handleMouseLeave = () => {
       button.style.transform = `translate(0px, 0px) translateZ(0px)`;
-      text
-        ? (text.style.transform = `translate(0px, 0px) translateZ(0px)`)
-        : null;
-      setIsHovered(false);
+      if (text) text.style.transform = `translate(0px, 0px) translateZ(0px)`;
     };
 
     buttonContainer.addEventListener("mousemove", handleMouseMove);
@@ -118,10 +107,14 @@ const ButtonV2 = ({
   }, []);
 
   return (
-    <div ref={buttonContainerRef} className={`p-2 flex jusf-center items-center ${containerClassName}`}>
+    <div
+      ref={buttonContainerRef}
+      className={`p-2 flex jusf-center items-center ${containerClassName}`}
+    >
       <button
         ref={buttonRef}
         onClick={onClick}
+        type={type}
         className={twMerge(
           "font-medium flex justify-center items-center rounded-md h-fit text-sm px-5 py-3 cursor-pointer duration-300 ",
           variant === "outlined"
@@ -149,4 +142,4 @@ const ButtonV2 = ({
   );
 };
 
-export default ButtonV2;
+export default Button;
